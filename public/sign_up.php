@@ -16,7 +16,7 @@
 <div class="da">
 	
   <p id="zc"><strong>欢迎注册</strong></p>
-	<p id="yy">已有帐号？<a href="#">登录</a></p>
+	<p id="yy">已有帐号？<a href="sign_in.php">登录</a></p>
     <div style="color: red;margin-left: 150px"><strong>
 
     <!--php代码处理开始-->

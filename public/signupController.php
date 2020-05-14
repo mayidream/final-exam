@@ -34,25 +34,37 @@ if (@$_POST['submit']=='注册') {
             header('location:sign_up.php');
             exit();
         }
-        $username=$_POST['username'];
-        $password=$_POST['password'];
-        $telphone=$_POST['tel'];
-        $create_time=time();
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $telphone = $_POST['tel'];
+        $create_time = time();
         //连接数据库
-        $mysql=new Db('user');
-        $link=$mysql->link;
-        $sql="INSERT INTO `user` (`user_id`, `uname`, `telphone`, `upass`, `create_time`, `update_time`) VALUES (NULL, '$username', '$password', '$telphone', '$create_time', NULL);";
-        $result=mysqli_query($link,$sql);
-        if ($result==true){
-            $url='sign_in.php';
-            skip($url,'注册成功');
-        }else{
-            echo '注册失败';
-        }
+        $mysql = new Db('user');
+        $link = $mysql->link;
+        $selectsql = "select * from user where  uname='$username'";
+        $select_result = mysqli_query($link, $selectsql);
+        $select_results = mysqli_fetch_array($select_result);
+        if ($select_results) {
+            $_SESSION['error'] = '该用户名已存在';
+            header('location:sign_up.php');
+            exit();
+        } else {
 
+
+            $sql = "INSERT INTO `user` (`user_id`, `uname`, `telphone`, `upass`, `create_time`, `update_time`) VALUES (NULL, '$username', '$password', '$telphone', '$create_time', NULL);";
+            $result = mysqli_query($link, $sql);
+            if ($result == true) {
+                $url = 'sign_in.php';
+                skip($url, '注册成功');
+            } else {
+                echo '发生未知错误';
+            }
+
+        }
     }else{
-        header('location:sign_up.php');
-    }
+                header('location:sign_up.php');
+            }
+
 }else{
     header('location:sign_up.php');
 }
@@ -65,7 +77,12 @@ function skip($url,$message){
 <meta charset="UTF-8">
 <meta http-equiv="refresh" content="3;URL={$url}" />
 <title>正在跳转中...</title>
-<link rel="stylesheet" type="text/css" href="style/remind.css">
+<style>
+a{
+text-decoration: none;
+color: red;
+}
+</style>
 </head>
 <body>
 <div class="notice"><span>{$message}</span><a href="{$url}">，三秒后自动跳转！</a> </div>

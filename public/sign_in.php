@@ -23,7 +23,7 @@
     <li class="layui-nav-item"><a href="">会员中心</a></li>
     <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href=""><img src="images/购物车.png" width="20px" height="20px"></a></li>
 
-    <li class="sign" style="list-style: none"><a href="">登录</a> |<a href="">&nbsp;注册</a> </li>
+    <li class="sign" style="list-style: none"><a href="">登录</a> |<a href="sign_up.php">&nbsp;注册</a> </li>
 <!--    <li class="layui-nav-item">-->
 <!--        <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>-->
 <!--        <dl class="layui-nav-child">-->
@@ -69,7 +69,7 @@
     }
     ?>
     <!--php处理程序结束-->
-<form action="./verifyController.php" method="post">
+<form action="signinController.php" method="post">
 <div class="username"><input class="userInp" type="text" name="username" placeholder="请输入用户名"/></div>
 <div style="height:8px;width:350px"></div><!--留空 -->
 <div class="pwd"><input class="pwdInp" name="password" type="password" placeholder="请输入密码"/></div>
