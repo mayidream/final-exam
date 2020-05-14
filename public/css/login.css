@@ -1,0 +1,139 @@
+
+#zong{
+    margin: 0 auto;
+    width: 1200px;
+    height: 740px;
+
+}
+#zhong{
+    height: 550px;
+    width: 1200px;
+    background-image:url(../images/timg.jpg);
+}
+#left{
+    float: left;
+    width: 780px;
+    height: 500px;
+}
+#fu{
+
+    width: 350px;
+    height: 410px;
+    float:right;
+    background-color:#FFF;
+    border: 1px solid #CCC;
+}
+.cc {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+}
+
+.username,
+.pwd,
+.forgetPwd {
+    width: 280px;
+    height: 40px;
+    border: 2px solid #efefef;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+
+.userImg,
+.pwdImg {
+    margin-top: 18px;
+    float: left;
+}
+
+.userInp,
+.pwdInp {
+    width: 250px;
+    height: 25px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+.y{
+    width: 150px;
+    float: right;
+    margin: 0 auto;
+    height: 40px;
+    font-family: '微软雅黑';
+    margin-top: 7px;
+    text-align:center;
+}
+.yz{
+    width: 100px;
+    height: 40px;
+    border: 2px solid #efefef;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-top: 7px;
+    float:left;
+}
+.yzm{
+    width: 80px;
+    height: 25px;
+    margin-top: 8px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    float:left;
+}
+
+.forgetPwd {
+    border: none;
+    line-height: 40px;
+    color: #3e82bf;
+    font-size: 16px;
+}
+
+.forgetLink {
+    padding-left: 200px;
+}
+
+.btn {
+    width: 300px;
+    height: 40px;
+    background: #F63;
+    border: 1px solid #326dcc;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 26px;
+    margin-top:40px;
+    cursor: pointer;
+}
+#right /*左右浮动实现一行放置两个div*/
+{
+    float: right;
+    width: 420px;
+    height: 200px;
+}
+#wei{
+    width: 1200px;
+    height: 180px;
+    background-image: url(../images/wei.jpg);
+    color: #FFF;
+    font-size: 14px;
+}
+#one{
+    width:400px;
+    height:120px;
+    float:left;
+}
+#two{
+    width: 450px;
+    height: 120px;
+    font-size: 14px;
+    float: left;
+    font-family: "微软雅黑";
+}
+#three{
+    width: 350px;
+    height: 120px;
+    float: right;
+}
+.div-inline{
+    display:inline
+}

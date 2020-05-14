@@ -1,0 +1,422 @@
+/*整体布局 */
+.head{
+    width: 1200px;
+    height: 1500px;
+    margin: 0 auto;
+}
+.buju{
+    margin: 0 auto;
+    width: 1100px;
+    height: 1500px;
+}
+/*导航*/
+.daohanglan{
+    width: 1100px;
+    height: 50px;
+    /*background-color: #231e17;*/
+}
+/*logo*/
+.logo{
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+/*快捷入口*/
+.daohang{
+    width: 900px;
+    height: 50px;
+}
+/*海报*/
+.haibao{
+    width: 1100px;
+    height: 500px;
+}
+/*热门景点*/
+/*板块一总体布局*/
+.bk1{
+    width: 1100px;
+    height: 500px;
+}
+
+/*板块一左边盒子*/
+.bk1_left_box {
+    margin-left: 50px;
+    width: 300px;
+    height: 500px;
+    float: left;
+}
+.bk1_left_img{
+    width: 300px;
+    height: 400px;
+}
+/*图片价格*/
+.bk1_left_img_price{
+    width: 300px;
+    height: 30px;
+}
+/*图片描述*/
+.bk1_left_img_name{
+    width: 300px;
+    height: 50px;
+}
+/*图片介绍*/
+.bk1_left_img_jieshao{
+    width: 300px;
+    height: 20px;
+}
+/*板块一中间盒子*/
+.bk1_middle_box{
+    float: left;
+    width: 300px;
+    height: 500px;
+    margin-left: 50px;
+}
+/*板块一中间字体*/
+.bk1_middle_font{
+    width: 300px;
+    height: 100px;
+}
+.bk1_middle_img{
+    height: 300px;
+    width: 300px;
+}
+.bk1_middle_img_price{
+    width: 300px;
+    height: 30px;
+}
+/*图片描述*/
+.bk1_middle_img_name{
+    width: 300px;
+    height: 50px;
+}
+/*图片介绍*/
+.bk1_middle_img_jieshao{
+    width: 300px;
+    height: 20px;
+}
+/*板块一右边盒子*/
+.bk1_right_box{
+    width: 300px;
+    height: 500px;
+    float: left;
+    margin-left: 50px;
+}
+/*搜索框*/
+.bk1_right_serarch{
+    height: 100px;
+    width: 300px;
+}
+.bk1_right_img{
+    height: 300px;
+    width: 300px;
+}
+.bk1_right_img_price{
+    width: 300px;
+    height: 30px;
+}
+/*图片描述*/
+.bk1_right_img_name{
+    width: 300px;
+    height: 50px;
+}
+/*图片介绍*/
+.bk1_right_img_jieshao{
+    width: 300px;
+    height: 20px;
+}
+
+
+/*板块二盒子*/
+.bk2_box{
+    height: 600px;
+    width: 1100px;
+}
+/*今日特惠*/
+.bk2_font_tehui{
+    height: 100px;
+    width: 1100px;
+}
+.bk2_font_english{
+    height: 50px;
+    width: 1100px;
+}
+/*    导航*/
+.bk2_font_daohang{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 50px;
+    width: 1100px;
+}
+/*板块二左边盒子*/
+.bk2_left_box{
+    float: left;
+    width: 300px;
+    height: 600px;
+}
+/*左文字*/
+.bk2_left_font{
+    width: 300px;
+    height: 100px;
+}
+/*左视频*/
+.bk2_left_video{
+    width: 400px;
+    height: 100px;
+}
+/*左视频文字*/
+.bk2_video_font2{
+    width:300px;
+    height: 100px;
+}
+/*板块二右边盒子*/
+.bk2_right_box{
+    float: left;
+    width: 800px;
+    height: 600px;
+}
+/*左图片上*/
+.bk2_left_img1{
+    width: 250px;
+    height: 250px;
+}
+/*左图片上描述*/
+.bk2_left_img1_font1{
+    height: 50px;
+    width: 250px;
+}
+/*按钮*/
+.anniu{
+    color: #ff9361;
+    width: 100px;
+    height: 50px;
+}
+/*左图片下*/
+.bk2_left_img2{
+    height: 250px;
+    width: 250px;
+}
+/*左图片下文字*/
+.bk2_left_img2_font2{
+    width: 250px;
+    height: 50px;
+}
+.bk2_middle_img1{
+    width: 250px;
+    height: 250px;
+}
+/*中间图片上描述*/
+.bk2_middle_img1_font1{
+    height: 50px;
+    width: 250px;
+}
+/*中间下图片*/
+.bk2_middle_img2{
+    height: 250px;
+    width: 250px;
+}
+/*中图片下文字*/
+.bk2_middle_img2_font2{
+    width: 250px;
+    height: 50px;
+}
+.bk2_right_img1{
+    width: 250px;
+    height: 250px;
+}
+/*中间图片上描述*/
+.bk2_right_img1_font1{
+    height: 50px;
+    width: 250px;
+}
+/*中间下图片*/
+.bk2_right_img2{
+    height: 250px;
+    width: 250px;
+}
+/*中图片下文字*/
+.bk2_right_img2_font2{
+    width: 250px;
+    height: 50px;
+}
+/*板块三盒子*/
+.bk3_box{
+    height: 800px;
+    width: 1100px;
+}
+/*主题旅游*/
+.bk3_luyou{
+    width: 1100px;
+    height: 50px;
+}
+/*板块三导航*/
+.bk3_daohang{
+    width: 1100px;
+    height: 50px;
+}
+/*板块三左边列表盒子*/
+.bk3_left_font_box{
+    width:200px;
+    height:800px;
+}
+/*列表一*/
+.bk3_left_font_liebiao{
+    width: 200px;
+    height: 300px;
+}
+/*列表二*/
+.bk3_left_font_liebiao2{
+    width: 200px;
+    height: 300px;
+}
+/*板块三盒子*/
+.bk3_right_box{
+    margin-left: 50px;
+    height: 600px;
+    width: 800px;
+}
+/*板块三图片*/
+.bk3_left_image1{
+    width: 250px;
+    height: 200px;
+}
+.bk3_middle_image1{
+    width: 250px;
+    height: 200px;
+}
+.bk3_right_image1{
+    width: 250px;
+    height: 200px;
+}
+/*板块三字体*/
+.bk3_left_font1{
+    height: 50px;
+    width: 250px;
+}
+.bk3_middle_font1{
+    height: 50px;
+    width: 250px;
+}
+.bk3_middle_font1{
+    height: 50px;
+    width: 250px;
+}
+.bk3_left_image2{
+    width: 250px;
+    height: 200px;
+}
+.bk3_middle_image2{
+    width: 250px;
+    height: 200px;
+}
+.bk3_right_image2{
+    width: 250px;
+    height: 200px;
+}
+/*板块三字体*/
+.bk3_left_font2{
+    height: 50px;
+    width: 250px;
+}
+.bk3_middle_font2{
+    height: 50px;
+    width: 250px;
+}
+.bk3_middle_font2{
+    height: 50px;
+    width: 250px;
+}
+/*板块四盒子*/
+.bk4_box{
+    height: 100px;
+    width: 1100px;
+}
+/*悠友说*/
+.bk4_left_you{
+    height: 100px;
+    width: 300px;
+    float: left;
+}
+.bk4_left_tuijian{
+    width: 250px;
+    height: 100px;
+    float: left;
+}
+.bk4_middle_tuijian{
+    width: 250px;
+    height: 100px;
+    float: left;
+}
+.bk4_right_tuijian{
+    width: 250px;
+    height: 100px;
+    float: left;
+}
+.bk4_more{
+    width: 1100px;
+    float: right;
+    height: 20px;
+}
+/*板块五盒子*/
+.bk5_box{
+    height: 200px;
+    width: 1100px;
+}
+/*关于我们*/
+.bk5_women{
+    width: 1100px;
+    height: 200px;
+    float: left;
+}
+.bk5_zhusu{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.bk5_lvyou{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.bk5_gentuan{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+.bk5_dingzhi{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+/*板块六盒子*/
+.bk6_box{
+    height: 200px;
+    width: 1100px;
+}
+/*板块六左边盒子*/
+.bk6_left_box{
+    width: 400px;
+    height: 200px;
+}
+.bk6_left_logo{
+    width: 200px;
+    height: 100px;
+}
+/*地址*/
+.bk6_left_tel{
+    width: 200px;
+    height: 100px;
+}
+/*中间盒子*/
+.bk6_middle_box{
+    height: 200px;
+    width: 500px;
+    float: left;
+}
+.bk6_right_ma{
+    height: 200px;
+    width: 200px;
+}
+.foot{
+    height: 20px;
+    width: 1100px;
+}
