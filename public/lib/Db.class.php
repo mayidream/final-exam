@@ -23,7 +23,7 @@ class Db
         $this->tableName=$tableName;
         $this->host = 'localhost';
         $this->user = 'root';
-        $this->pwd = 'root';
+        $this->pwd = 'wdy521521..';
         $this->charset = 'utf8';
         $this->dbname = 'riches';
         $this->link=$this->connection();
@@ -41,11 +41,11 @@ class Db
         //设置字符集
         mysqli_set_charset($link,$this->charset);
         //判断
-        if(!$link){
-            return '数据库连接失败';
-        }else{
-            echo '数据库连接成功';
-        }
+//        if(!$link){
+//            return '数据库连接失败';
+//        }else{
+//            echo '数据库连接成功';
+//        }
         //返回结果
         return $link;
     }

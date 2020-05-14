@@ -8,7 +8,7 @@
     <script src="./layui/layui.js"></script>
     <link rel="stylesheet" href="./layui/css/daohang.css">
     <!--    导航栏css样式  勿动-->
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/sign_in.css">
 
 </head>
 <body>

@@ -1,0 +1,128 @@
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+.ci{
+    color: #fff;
+    position:absolute;
+    top: 270px;
+    left: 250px;
+}
+.ci1{
+    color: #fff;
+    position:absolute;
+    top: 360px;
+    left: 250px;
+}
+#da{
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+#xiao{
+    font-size: 26px;
+    letter-spacing: 5px;
+}
+.lianxi{
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 95px;
+}
+.da{
+    background: #fff;
+    width: 480px;
+    position: absolute;
+    right: 140px;
+    top:80px;
+    filter: alpha(opacity=85);  /*针对IE*/
+    -moz-opacity:0.85;			/*针对火狐*/
+    opacity: 0.85;				/*其他*/
+    border-radius: 15px;
+}
+#zc{
+    position: relative;
+    left: 35px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+#yy{
+    position: relative;
+    left: 35px;
+    top:-25px;
+    font-size: 14px;
+    margin: 0 0 20px 0;
+}
+
+.yhm{
+    width: 260px;
+    height: 40px;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    margin-left:20px;
+    display: flex;
+}
+
+.yzm{
+    width: 140px;
+    height: 40px;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    margin-left:20px;
+    display: flex;
+}
+.userInp, .pwdInp {
+    width: 250px;
+    height: 25px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+
+.xm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 30px 0;
+}
+
+.xx{
+    font-size: 20px;
+    color: #333;
+}
+
+.yzt{
+    margin: 0 0 0 50px;
+    width: 70px;
+    height: 40px;
+    background: #FF0004;
+    text-align: center;
+}
+
+.submit {
+    width: 380px;
+    height: 45px;
+    background: #51AEFC;
+    border: 0px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+#xy1{
+    font-size: 12px;
+    margin: 0;
+}
+#xy{
+    font-size: 12px;
+    margin: 0 0 20px 0;
+}
