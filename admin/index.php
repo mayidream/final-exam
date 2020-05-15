@@ -18,7 +18,7 @@ if (!$_SESSION['username']){
     <!--    layui样式-->
     <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+<body style="overflow: hidden">
 <!--头部开始-->
 <div id="header">
 <div id="logo">
@@ -26,7 +26,7 @@ if (!$_SESSION['username']){
     <a href=""> <img src="image/logo.jpg" width="100" height="50"></a>
 </div>
     <div class="user">前台首页</div>
-<div class="user layui-icon"> <ul class="li " >
+<div class="user layui-icon"> <ul class="li">
         <li>
             <?php echo $_SESSION['username'] ?>&#xe625;
         <ul style="display: none">
@@ -79,6 +79,43 @@ if (!$_SESSION['username']){
         <span class="x-red" style="color: red"><?php echo $_SESSION['username'] ?></span>
         !当前时间：<?php echo date("Y-m-d H:i:s") ?>
     </blockquote>
+    <fieldset class="layui-elem-field" style="margin-left: 250px">
+        <legend>数据统计</legend>
+        <div class="layui-field-box">
+            <div class="layui-col-md12">
+                <div class="layui-card">
+                    <div class="layui-card-body">
+                                <ul class="layui-row layui-col-space10 layui-this" >
+                                    <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
+                                        <a href="">
+                                            <h3>文章数</h3>
+                                            <p style="color: blue">66</p>
+                                        </a>
+                                    </li>
+                                    <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
+                                        <a href="javascript:;">
+                                            <h3>会员数</h3>
+                                            <p style="color: blue">66</p>
+                                        </a>
+                                    </li>
+                                    <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
+                                        <a href="javascript:;">
+                                            <h3>回复数</h3>
+                                            <p style="color: blue">66</p>
+                                        </a>
+                                    </li>
+                                    <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
+                                        <a href="javascript:;">
+                                            <h3>商品数</h3>
+                                            <p style="color: blue">66</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+        </div>
+    </fieldset>
 <div class="content">
     <iframe frameborder="0" src="./welcome.php"  width="100%" height="100%" scrolling="no"></iframe>
 </div>
@@ -97,6 +134,7 @@ if (!$_SESSION['username']){
         });
     });
 
+    //下面可是我自己写的哦
     var li=document.querySelector('.li');
     var lis=li.children;
     lis
@@ -107,6 +145,14 @@ if (!$_SESSION['username']){
         lis[i].onmouseout=function () {
             this.children[0].style.display='none';
         }
+    }
+
+    //增加鼠标经过事件
+    var page=document.querySelectorAll('.layui-col-xs2');
+    page.onmouseover=function () {
+            for (var i =0;i<page.length;i++){
+                page[i].style.backgroundColor='red';
+            }
     }
 </script>
 
