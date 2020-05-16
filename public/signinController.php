@@ -6,22 +6,22 @@ if (@$_POST['submit']=='登录'){
     //验证验证码
     if ($_POST['username']==''){
         $_SESSION['error']='用户名不能为空';
-        header('location:login.php');
+        header('location:sign_in.php');
         exit();
     }
     if ($_POST['password']==''){
         $_SESSION['error']='密码不能为空';
-        header('location:login.php');
+        header('location:sign_in.php');
         exit();
     }
     if ($_POST['verify']==''){
         $_SESSION['error']='验证码不能为空';
-        header('location:login.php');
+        header('location:sign_in.php');
         exit();
     }
     if (strtoupper($_SESSION['code'])!=strtoupper($_POST['verify'])){
         $_SESSION['error']='验证码错误';
-        header('location:login.php');
+        header('location:sign_in.php');
         exit();
     }
 
@@ -38,12 +38,14 @@ if (@$_POST['submit']=='登录'){
 
             $_SESSION['username']=$username;
             $_SESSION['password']=$password;
+            setcookie('username',$username);
+            setcookie('password',$password);
             $_SESSION['error']='';
-            header('location:shouye.php');
+            header('location:index.php');
     }else{
         $_SESSION['error']='用户名或密码错误';
-        header('location:login.php');
+        header('location:sign_in.php');
     }
 }else{
-    header('location:login.php');
+    header('location:sign_in.php');
 }

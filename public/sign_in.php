@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>登录页面</title>
-<!--    导航栏css样式  勿动-->
     <link rel="stylesheet" href="./layui/css/layui.css">
     <script src="./layui/layui.js"></script>
-    <link rel="stylesheet" href="./layui/css/daohang.css">
-    <!--    导航栏css样式  勿动-->
     <link rel="stylesheet" href="css/sign_in.css">
 
 </head>
@@ -16,7 +13,7 @@
 <div class="header">
 <ul class="layui-nav" lay-filter="">
     <li class="sign"><a href=""><img src="./images/logo.png" width="100px" height="50px"></a></li>
-    <li class="layui-nav-item "><a href="">首页</a></li>
+    <li class="layui-nav-item "><a href="index.php">首页</a></li>
     <li class="layui-nav-item "><a href="">U定制</a></li>
     <li class="layui-nav-item"><a href="">我的客栈</a></li>
     <li class="layui-nav-item"><a href="">旅游攻略</a></li>
@@ -24,14 +21,6 @@
     <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href=""><img src="images/购物车.png" width="20px" height="20px"></a></li>
 
     <li class="sign" style="list-style: none"><a href="">登录</a> |<a href="sign_up.php">&nbsp;注册</a> </li>
-<!--    <li class="layui-nav-item">-->
-<!--        <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>-->
-<!--        <dl class="layui-nav-child">-->
-<!--            <dd><a href="javascript:;">修改信息</a></dd>-->
-<!--            <dd><a href="javascript:;">安全管理</a></dd>-->
-<!--            <dd><a href="javascript:;">退出登录</a></dd>-->
-<!--        </dl>-->
-<!--    </li>-->
 </ul>
 </div>
 <!--当导航栏结束-->
@@ -128,10 +117,10 @@
 <img src="images/er.jpg" width="80"><!--二维码 -->
 </div>
 
-<div style="font-family: '微软雅黑'; font-size: 10px; text-align:center">COPYRIGHT © 2020 悠游网 All Rights Reserved 豫ICP备66668888号</div>
+<div style="font-family: '微软雅黑'; font-size: 10px; text-align:center;height: 10px;width: 1200px">COPYRIGHT © 2020 悠游网 All Rights Reserved 豫ICP备66668888号</div>
 </div>
-
-</div><!--zong-->
+</div>
+<!--zong-->
 
 <script>
     //注意：导航 依赖 element 模块，否则无法进行功能性操作

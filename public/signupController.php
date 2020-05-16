@@ -38,7 +38,7 @@ if (@$_POST['submit']=='注册') {
         $password = $_POST['password'];
         $telphone = $_POST['tel'];
         $create_time = time();
-        //连接数据库
+        //连接数据库**
         $mysql = new Db('user');
         $link = $mysql->link;
         $selectsql = "select * from user where  uname='$username'";
