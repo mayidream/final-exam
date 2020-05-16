@@ -79,7 +79,7 @@ if (!$_SESSION['username']){
         <span class="x-red" style="color: red"><?php echo $_SESSION['username'] ?></span>
         !当前时间：<?php echo date("Y-m-d H:i:s") ?>
     </blockquote>
-    <fieldset class="layui-elem-field" style="margin-left: 250px">
+    <fieldset class="layui-elem-field" style="margin-left: 250px;margin-top: 40px">
         <legend>数据统计</legend>
         <div class="layui-field-box">
             <div class="layui-col-md12">
@@ -89,27 +89,34 @@ if (!$_SESSION['username']){
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
                                         <a href="">
                                             <h3>文章数</h3>
-                                            <p style="color: blue">66</p>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
                                         </a>
                                     </li>
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
                                         <a href="javascript:;">
                                             <h3>会员数</h3>
-                                            <p style="color: blue">66</p>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
                                         </a>
                                     </li>
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
                                         <a href="javascript:;">
                                             <h3>回复数</h3>
-                                            <p style="color: blue">66</p>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
                                         </a>
                                     </li>
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
                                         <a href="javascript:;">
                                             <h3>商品数</h3>
-                                            <p style="color: blue">66</p>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
                                         </a>
                                     </li>
+                                    <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
+                                        <a href="javascript:;">
+                                            <h3>商品数</h3>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
+                                        </a>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -149,10 +156,35 @@ if (!$_SESSION['username']){
 
     //增加鼠标经过事件
     var page=document.querySelectorAll('.layui-col-xs2');
-    page.onmouseover=function () {
-            for (var i =0;i<page.length;i++){
-                page[i].style.backgroundColor='red';
-            }
+    page[0].onmouseover=function () {
+        page[0].style.backgroundColor='red';
+    }
+    page[0].onmouseout=function () {
+        page[0].style.backgroundColor='#e6e6e6';
+    }
+    page[1].onmouseover=function () {
+        page[1].style.backgroundColor='red';
+    }
+    page[1].onmouseout=function () {
+        page[1].style.backgroundColor='#e6e6e6';
+    }
+    page[2].onmouseover=function () {
+        page[2].style.backgroundColor='red';
+    }
+    page[2].onmouseout=function () {
+        page[2].style.backgroundColor='#e6e6e6';
+    }
+    page[3].onmouseover=function () {
+        page[3].style.backgroundColor='red';
+    }
+    page[3].onmouseout=function () {
+        page[3].style.backgroundColor='#e6e6e6';
+    }
+    page[4].onmouseover=function () {
+        page[4].style.backgroundColor='red';
+    }
+    page[4].onmouseout=function () {
+        page[4].style.backgroundColor='#e6e6e6';
     }
 </script>
 

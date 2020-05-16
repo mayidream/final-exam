@@ -112,40 +112,53 @@
 </div>
 <div id="ezuo">
 
-	<img src="images/8.jpg">
+    <?php
+    $mysql=new Db('tehui');
+    $sql='select * from tehui';
+    $result=mysqli_query($link,$sql);
+    $results=mysqli_fetch_assoc($result);
+    ?>
+
+	<img src="<?php echo $results['pro_path']?>">
 	<div id="w1">
-	<p align="center" class="ss">舒适恬静海景大房</p>
-    <p align="center" class="dc">1.8x2.0米大床&nbsp;免费WiFi&nbsp;丰盛自助</p>
+	<p align="center" class="ss"><?php echo $results['pro_name'] ?></p>
+    <p align="center" class="dc"><?php echo $results['commit'] ?></p>
 	</div>
 	<div id="an1" align="left"><input class="button" type="button" value="立即预定"/></div>
   </div>
 <div id="eyou">
 	<div id="ys">
 	<div id="ys1">
-		<div><img src="images/9.jpg"></div>
-		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <?php $results=mysqli_fetch_assoc($result); ?>
+		<div><img src="<?php echo $results['pro_path']?>"></div>
+		<p align="center" class="xg"><?php echo $results['pro_name']?></p>
 		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
-	<div id="ys2"><div><img src="images/10.jpg"></div>
-		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <?php $results=mysqli_fetch_assoc($result); ?>
+	<div id="ys2"><div><img src="<?php echo $results['pro_path']?>"></div>
+		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
-	<div id="ys3"><div><img src="images/9.jpg"></div>
-		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <?php $results=mysqli_fetch_assoc($result); ?>
+	<div id="ys3"><div><img src="<?php echo $results['pro_path']?>"></div>
+		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
 	</div>
 	<div id="yx">
-	<div id="yx1"><div><img src="images/9.jpg"></div>
-		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
+        <?php $results=mysqli_fetch_assoc($result); ?>
+	<div id="yx1"><div><img src="<?php echo $results['pro_path']?>"></div>
+		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		<div id="an2" align="left"><input class="button" name="submit" type="button"  value="立即预定"/></div>
 	  </div>
-	<div id="yx2"><div><img src="images/10.jpg"></div>
-		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
+        <?php $results=mysqli_fetch_assoc($result); ?>
+	<div id="yx2"><div><img src="<?php echo $results['pro_path']?>"></div>
+		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
 	  </div>
-	<div id="yx3"><div><img src="images/9.jpg"></div>
-		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <?php $results=mysqli_fetch_assoc($result); ?>
+	<div id="yx3"><div><img src="<?php echo $results['pro_path']?>"></div>
+		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
 	  </div>
 	</div>
@@ -181,24 +194,31 @@
 </ul>
 	</div>
   </div>
-    
+    <?php
+    $mysql=new Db('theme');
+    $sql='select * from theme';
+    $result=mysqli_query($link,$sql);
+    $results=mysqli_fetch_assoc($result);
+    ?>
 <div id="s2">
-	<div align="center"><img src="images/11.jpg"></div>
-	<a href="#"><p align="left" class="q">￥5181</p></a>
+	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
+	<a href="#"><p align="left" class="q">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i">起</p></a>
-	<p align="right" class="myd">满意度&nbsp;94%</p>
+	<p align="right" class="myd">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
   </div>
 <div id="s3">
-	<div align="center"><img src="images/12.jpg"></div>
-	<a href="#"><p align="left" class="q1">￥10143</p></a>
+    <?php $results=mysqli_fetch_assoc($result); ?>
+	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
+	<a href="#"><p align="left" class="q1">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i1">起</p></a>
-	<p align="right" class="myd1">满意度&nbsp;94%</p>
+	<p align="right" class="myd1">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
   </div>
 <div id="s4">
-	<div align="center"><img src="images/13.jpg"></div>
-	<a href="#"><p align="left" class="q2">￥14421</p></a>
+    <?php $results=mysqli_fetch_assoc($result); ?>
+	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
+	<a href="#"><p align="left" class="q2">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i2">起</p></a>
-	<p align="right" class="myd2">满意度&nbsp;96%</p>
+	<p align="right" class="myd2">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
   </div>
 
 <div id="wu">
@@ -220,22 +240,25 @@
   </div>
     
 <div id="w2">
-	<div align="center"><img src="images/11.jpg"></div>
-	<a href="#"><p align="left" class="q">￥5181</p></a>
+    <?php $results=mysqli_fetch_assoc($result); ?>
+	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
+	<a href="#"><p align="left" class="q">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i">起</p></a>
-	<p align="right" class="myd">满意度&nbsp;94%</p>
+	<p align="right" class="myd">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
   </div>
 <div id="w3">
-	<div align="center"><img src="images/12.jpg"></div>
-	<a href="#"><p align="left" class="q1">￥10143</p></a>
+    <?php $results=mysqli_fetch_assoc($result); ?>
+	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
+	<a href="#"><p align="left" class="q1">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i1">起</p></a>
-	<p align="right" class="myd1">满意度&nbsp;94%</p>
+	<p align="right" class="myd1">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
   </div>
 <div id="w4">
-	<div align="left"><img src="images/13.jpg"></div>
-	<a href="#"><p align="left" class="q2">￥14421</p></a>
+    <?php $results=mysqli_fetch_assoc($result); ?>
+	<div align="left"><img src="<?php echo $results['pro_path']?>"></div>
+	<a href="#"><p align="left" class="q2">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i2">起</p></a>
-	<p align="right" class="myd2">满意度&nbsp;96%</p>
+	<p align="right" class="myd2">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
   </div>  
 </div>
 
