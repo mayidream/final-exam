@@ -10,7 +10,7 @@
     <!--    导航栏css样式  勿动-->
     <!--    海报css样式  勿动-->
     <style>
-        .test{
+        .haibao{
             width: 1200px;
             height: 500px;
             margin: 0 auto;
@@ -35,43 +35,53 @@
         echo "<li class='layui-nav-item'>
                 <a href=''><img src='./images/touxiang.jpeg' class='layui-nav-img'>".$_SESSION['username']."</a>
                 <dl class='layui-nav-child''>
-                    <dd><a href='javascript:;'>修改信息</a></dd>
-                    <dd><a href='javascript:;'>安全管理</a></dd>
+                    <dd><a href=''>修改信息</a></dd>
+                    <dd><a href=''>安全管理</a></dd>
                     <dd><a href='sign_out.php'>退出登录</a></dd>
                </dl>
                </li>";
     }else{echo "<li class='sign' style='list-style: none'><a href='sign_in.php'>登录</a> |<a href='sign_up.php'>注册</a> </li>";} ?>
-
-
 </ul>
 
+    <!--从数据库中获取数据-->
+    <?php
+    require_once 'autoload.php';
+        $mysqli=new Db('hot_area');
+        $link=$mysqli->link;
+        $sql='SELECT * FROM hot_area ';
+        $result=mysqli_query($link,$sql);
+        $results=mysqli_fetch_assoc($result);
+    ?>
+
+
 <!--  这下面写HTML代码-->
-<div class="test">
+<div class="haibao">
 <div class="layui-carousel" id="test1">
     <div carousel-item>
-        <div><img src="images/1.png"></div>
-        <div><img src="images/2.jpg"></div>
-        <div><img src="images/3.jpg"></div>
-        <div><img src="images/4.jpg"></div>
+        <div><a href="#"><img src="images/1.png"></a> </div>
+        <div><a href="#"><img src="images/2.jpg"></a> </div>
+        <div><a href="#"><img src="images/3.jpg"></a> </div>
+        <div><a href="#"><img src="images/4.jpg"></a> </div>
     </div>
 </div>
 </div>
 <!-- 条目中可以是任意内容，如：<img src=""> -->
 <div id="yi">
 <div id="zuo">
-<img src="images/5.png">
-<a href="#"><p align="right" class="jg">￥1944</p></a>
-<p align="center" class="zt">泰国自驾|象岛芭提雅3日</p>
-<p align="center" class="xzt">一场纯粹的释放，让心灵得到净化...</p>
+<img src="<?php echo $results['pro_path']?>">
+<a href=""><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
+<p align="center" class="zt"><?php echo $results['pro_name'] ?></p>
+<p align="center" class="xzt"><?php echo @$results['commit'] ?></p>
 </div>
 <div id="zhong">
 <p align="center" class="bt">热门景点</p>
 <p align="center" class="xbt">POPULAR&nbsp;DESTINATION</p><br/>
-<a href="#"><p align="center" class="jg">more&nbsp;&nbsp;&nbsp;&nbsp;></p></a><br/><br/>
-<img src="images/6.png" width="356" height="271">
-<a href="#"><p align="right" class="jg">￥1964</p></a>
-<p align="center" class="zt">日本|东京3日游</p>
-<p align="center" class="xzt">一场关于街道的狂欢...</p>
+<a href=""><p align="center" class="jg">more&nbsp;&nbsp;&nbsp;&nbsp;></p></a><br/><br/>
+    <?php $results=mysqli_fetch_assoc($result); ?>
+<img src="<?php echo $results['pro_path'] ?>" width="356" height="271">
+<a href=""><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
+<p align="center" class="zt"><?php echo $results['pro_name'] ?></p>
+<p align="center" class="xzt"><?php echo @$results['commit'] ?></p>
 </div>
 <div id="you">
 <br/>
@@ -80,11 +90,11 @@
 
 <p><input type="text" placeholder="&nbsp;请搜索你喜欢的地方"><input type="button" value="搜 索"></p>
 <br/><br/><br/><br/>
-<img src="images/7.png" width="349" height="270">
-<a href="#"><p align="right" class="jg">￥4964</p></a>
-<p align="center" class="zt">巴黎卡|大山7日游</p>
-<p align="center" class="xzt">领略不一样的风土人情...</p>
-
+    <?php $results=mysqli_fetch_assoc($result); ?>
+<img src="<?php echo $results['pro_path'] ?>" width="349" height="270">
+<a href="#"><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
+<p align="center" class="zt"><?php echo $results['pro_name'] ?></p>
+<p align="center" class="xzt"><?php echo @$results['commit'] ; ?></p>
 </div>
 </div>
 <div id="er">
@@ -101,37 +111,38 @@
 </ul>
 </div>
 <div id="ezuo">
+
 	<img src="images/8.jpg">
 	<div id="w1">
 	<p align="center" class="ss">舒适恬静海景大房</p>
     <p align="center" class="dc">1.8x2.0米大床&nbsp;免费WiFi&nbsp;丰盛自助</p>
 	</div>
-	<div id="an1" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
+	<div id="an1" align="left"><input class="button" type="button" value="立即预定"/></div>
   </div>
 <div id="eyou">
 	<div id="ys">
 	<div id="ys1">
 		<div><img src="images/9.jpg"></div>
 		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
+		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
 	<div id="ys2"><div><img src="images/10.jpg"></div>
 		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
+		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
 	<div id="ys3"><div><img src="images/9.jpg"></div>
 		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
+		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
 	</div>
 	<div id="yx">
 	<div id="yx1"><div><img src="images/9.jpg"></div>
 		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
+		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
 	<div id="yx2"><div><img src="images/10.jpg"></div>
 		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
+		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
 	<div id="yx3"><div><img src="images/9.jpg"></div>
 		<p align="center" class="xg">酒店&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>

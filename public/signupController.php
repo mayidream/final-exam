@@ -51,7 +51,7 @@ if (@$_POST['submit']=='注册') {
         } else {
 
 
-            $sql = "INSERT INTO `user` (`user_id`, `uname`, `telphone`, `upass`, `create_time`, `update_time`) VALUES (NULL, '$username', '$password', '$telphone', '$create_time', NULL);";
+            $sql = "INSERT INTO `user` (`user_id`, `uname`, `telphone`, `upass`, `create_time`, `update_time`) VALUES (NULL, '$username', '$telphone', '$password', '$create_time', NULL);";
             $result = mysqli_query($link, $sql);
             if ($result == true) {
                 $url = 'sign_in.php';
