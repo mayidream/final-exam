@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>悠游网</title>
 <!--    导航栏css样式  勿动-->
     <link rel="stylesheet" href="./layui/css/layui.css">
     <script src="./layui/layui.js"></script>
@@ -93,7 +93,7 @@
     <?php $results=mysqli_fetch_assoc($result); ?>
 <img src="<?php echo $results['pro_path'] ?>" width="349" height="270">
 <a href="#"><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
-<p align="center" class="zt"><?php echo $results['pro_name'] ?></p>
+<p align="center" class="zt"><?php echo @$results['pro_name'] ?></p>
 <p align="center" class="xzt"><?php echo @$results['commit'] ; ?></p>
 </div>
 </div>
@@ -121,17 +121,17 @@
 
 	<img src="<?php echo $results['pro_path']?>">
 	<div id="w1">
-	<p align="center" class="ss"><?php echo $results['pro_name'] ?></p>
+	<p align="center" class="ss"><?php echo $results['pro_name'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
     <p align="center" class="dc"><?php echo $results['commit'] ?></p>
 	</div>
-	<div id="an1" align="left"><input class="button" type="button" value="立即预定"/></div>
+	<div id="an1" align="left"><input class="button1" type="button" value="立即预定"/></div>
   </div>
 <div id="eyou">
 	<div id="ys">
 	<div id="ys1">
         <?php $results=mysqli_fetch_assoc($result); ?>
-		<div><img src="<?php echo $results['pro_path']?>"></div>
-		<p align="center" class="xg"><?php echo $results['pro_name']?></p>
+		<div><img src="<?php echo @$results['pro_path']?>"></div>
+		<p align="center" class="xg"><?php echo @$results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
@@ -149,17 +149,17 @@
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="yx1"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" name="submit" type="button"  value="立即预定"/></div>
+		<div id="an2" align="left"><input class="button"  type="button"  value="立即预定"/></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="yx2"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
+		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="yx3"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="submit" name="submit" value="立即预定"/></div>
+		<div id="an2" align="left"><input class="button" type="button" value="立即预定"/></div>
 	  </div>
 	</div>
 </div>
@@ -271,30 +271,34 @@
 </div>
 
 <div id="l1">
+    <?php
+    $mysql=new Db('you_speak');
+    $sql='select * from you_speak';
+    $result=mysqli_query($link,$sql);
+    $results=mysqli_fetch_assoc($result); ?>
     <p align="left" class="hb1">超全&nbsp; |</p>
-    <p align="left" class="hb2">吃遍杭州26家大店</p>
-    <p align="center" class="y5">在我的印象中，杭州是一个充满诗情画意的地方，到处散发这山水的气息，就在2018年的3月，我决定
-去杭州一趟我想把我的春天交给杭州...</p>
+    <p align="left" class="hb2"><?php echo @$results['commit_title'] ?></p>
+    <p align="center" class="y5"><?php echo @$results['commit'] ?></p>
     <p align="center" class="y6">爱旅游的小猫咪</p>
     <p align="center" class="y7"><img src="images/实心星星.jpg" width="35" height="5" alt="星星"></p>
     <p align="center" class="y8">2019.08.31</p>
 </div>
 
 <div id="l2">
+    <?php $results=mysqli_fetch_assoc($result);  ?>
     <p align="left" class="hb1">浪漫&nbsp; |</p>
-    <p align="left" class="hb2">三亚之旅</p>
-    <p align="center" class="y5">在我的印象中，三亚是一个充满诗情画意的地方，到处散发这山水的气息，就在2018年的3月，我决定
-去杭州一趟我想把我的春天交给杭州...</p>
+    <p align="left" class="hb2"><?php echo @$results['commit_title'] ?></p>
+    <p align="center" class="y5"><?php echo @$results['commit'] ?></p>
     <p align="center" class="y6">爱旅游</p>
     <p align="center" class="y7"><img src="images/实心星星.jpg" width="35" height="5" alt="星星"></p>
     <p align="center" class="y8">2019.08.31</p>
 </div>
 
 <div id="l3">
+    <?php $results=mysqli_fetch_assoc($result);  ?>
     <p align="left" class="hb1">惊喜&nbsp; |</p>
-    <p align="left" class="hb2">上有天堂下有苏杭</p>
-    <p align="center" class="y5">在我的印象中，苏杭是一个充满诗情画意的地方，到处散发这山水的气息，就在2018年的3月，我决定
-去杭州一趟我想把我的春天交给杭州...</p>
+    <p align="left" class="hb2"><?php echo @$results['commit_title'] ?></p>
+    <p align="center" class="y5"><?php echo @$results['commit'] ?></p>
     <p align="center" class="y6">小猫咪</p>
     <p align="center" class="y7"><img src="images/实心星星.jpg" width="35" height="5" alt="星星"></p>
     <p align="center" class="y8">2019.11.25</p>
