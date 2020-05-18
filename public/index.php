@@ -88,7 +88,7 @@
 <br/>
 <br/>
 
-<p><input type="text" placeholder="&nbsp;请搜索你喜欢的地方"><input type="button" value="搜 索"></p>
+<p><input type="text" placeholder="&nbsp;请搜索你喜欢的地方"><a href="#"><input type="button" value="搜 索"></a></p>
 <br/><br/><br/><br/>
     <?php $results=mysqli_fetch_assoc($result); ?>
 <img src="<?php echo $results['pro_path'] ?>" width="349" height="270">
@@ -124,7 +124,7 @@
 	<p align="center" class="ss"><?php echo $results['pro_name'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
     <p align="center" class="dc"><?php echo $results['commit'] ?></p>
 	</div>
-	<div id="an1" align="left"><input class="button1" type="button" value="立即预定"/></div>
+	<div id="an1" align="left"><a href="#"><input class="button1" type="button" value="立即预定"/></a></div>
   </div>
 <div id="eyou">
 	<div id="ys">
@@ -132,34 +132,34 @@
         <?php $results=mysqli_fetch_assoc($result); ?>
 		<div><img src="<?php echo @$results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo @$results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="ys2"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="ys3"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div>
 	  </div>
 	</div>
 	<div id="yx">
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="yx1"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button"  type="button"  value="立即预定"/></div>
+		<div id="an2" align="left"><a href="#"><input class="button"  type="button"  value="立即预定"/></a></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="yx2"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="button"  value="立即预定"/></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="yx3"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><input class="button" type="button" value="立即预定"/></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button" value="立即预定"/></a></div>
 	  </div>
 	</div>
 </div>
@@ -264,10 +264,10 @@
 
 
 <div id="liu">
-    <p align="center" class="j">悠友说</p>
+    <p align="center" class="j"><a href="#">悠友说</a></p>
     <p align="center" class="t">YOU YOU SAY</p>
     <p align="right" class="y3"><img src="images/短信.png" width="30" height="30" alt="短信"></p>
-    <p align="left" class="y4">我来说</p>
+    <p align="left" class="y4"><a href="#">我来说</a></p>
 </div>
 
 <div id="l1">
@@ -303,7 +303,7 @@
     <p align="center" class="y7"><img src="images/实心星星.jpg" width="35" height="5" alt="星星"></p>
     <p align="center" class="y8">2019.11.25</p>
   
- <div id="l4"><p align="right" class="y9"> < &nbsp; more &nbsp; > </p> </div>   
+ <div id="l4"><p align="right" class="y9"><a href="#"> < &nbsp; more &nbsp; ></a> </p> </div>   
 </div>
 
 <div id="qi">
@@ -313,22 +313,22 @@
 
 <div id="qi1">
     <p align="center" class="q12"><img src="images/住宿.png" width="100" height="100" alt="住宿"></p>
-    <p align="center" class="q13">住宿</p>
+    <p align="center" class="q13"><a href="#">住宿</a></p>
 </div>  
   
 <div id="qi2">
     <p align="center" class="q12"><img src="images/旅游.png" width="100" height="100" alt="旅游"></p>
-    <p align="center" class="q13">旅游</p>
+    <p align="center" class="q13"><a href="#">旅游</a></p>
 </div>    
 
 <div id="qi3">
     <p align="center" class="q12"><img src="images/跟团.png" width="100" height="100" alt="跟团"></p>
-    <p align="center" class="q13">跟团</p>
+    <p align="center" class="q13"><a href="#">跟团</a></p>
 </div>    
 
 <div id="qi4">
     <p align="left" class="q12">&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/定制.png" width="100" height="100" alt="定制"></p>
-    <p align="left" class="q14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;定制</p>
+    <p align="left" class="q14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">定制</a></p>
 </div>
 
 <!--尾部-->
