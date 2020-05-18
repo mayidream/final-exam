@@ -23,7 +23,7 @@ class Db
         $this->tableName=$tableName;
         $this->host = 'localhost';
         $this->user = 'root';
-        $this->pwd = 'wdy521521..';
+        $this->pwd = 'root';
         $this->charset = 'utf8';
         $this->dbname = 'riches';
         $this->link=$this->connection();

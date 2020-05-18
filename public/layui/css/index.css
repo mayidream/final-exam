@@ -211,6 +211,16 @@ outline:none;
 	font-size:16px;
 }
 .button{
+	width:50px;
+	height:30px;
+	background-color:#EF6405;
+	border:none;
+	font-size:10px;
+	text-align:center;
+	color:#FFF;
+	display:block;
+}
+.button1{
 	width:95px;
 	height:30px;
 	background-color:#EF6405;
@@ -221,7 +231,7 @@ outline:none;
 	display:block;
 }
 #an1 {
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-right: auto;
 	margin-bottom: 8px;
 	margin-left: auto;
@@ -610,7 +620,7 @@ outline:none;
 	background-image: url(../../images/wei.jpg);
 	color: #FFF;
 	font-size: 14px;
-	margin-top: 630px;
+	margin-top: 690px;
 }
 #one{
 	width:400px;
