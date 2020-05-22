@@ -3,6 +3,7 @@ session_start();
 if (!$_SESSION['username']){
     header('location:login.php');
 }
+require_once 'autoload.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -25,7 +26,7 @@ if (!$_SESSION['username']){
 <!--    logo-->
     <a href=""> <img src="image/logo.jpg" width="100" height="50"></a>
 </div>
-    <div class="user">前台首页</div>
+    <div class="user"><a href="../public/index.php">前台首页</a> </div>
 <div class="user layui-icon"> <ul class="li">
         <li>
             <?php echo $_SESSION['username'] ?>&#xe625;
@@ -47,8 +48,7 @@ if (!$_SESSION['username']){
     <li class="layui-nav-item layui-nav-itemed layui-icon">
         <a href="javascript:;">&#xe770; 会员管理</a>
         <dl class="layui-nav-child">
-            <dd><a href="javascript:;" >&nbsp;&nbsp;会员列表</a></dd>
-            <dd><a href="javascript:;">&nbsp;&nbsp;会员删除</a></dd>
+            <dd><a class="member_list" href="member_list.php">&nbsp;&nbsp;会员列表</a></dd>
         </dl>
     </li>
     <li class="layui-nav-item">
@@ -60,7 +60,7 @@ if (!$_SESSION['username']){
         <li class="layui-nav-item">
             <a href="javascript:;">&#xe66f;管理员管理</a>
             <dl class="layui-nav-child">
-                <dd><a href="">&nbsp;&nbsp;管理员列表</a></dd>
+                <dd><a href="admin_list.php">&nbsp;&nbsp;管理员列表</a></dd>
                 <dd><a href="">&nbsp;&nbsp;角色列表</a></dd>
             </dl>
         </li>
@@ -76,8 +76,8 @@ if (!$_SESSION['username']){
 <div class="x-body" >
     <blockquote class="layui-elem-quote" style="margin-left: 210px; margin-top: 20px">
         欢迎管理员:
-        <span class="x-red" style="color: red"><?php echo $_SESSION['username'] ?></span>
-        !当前时间：<?php echo date("Y-m-d H:i:s") ?>
+        <span class="x-red" style="color: red"><?php date_default_timezone_set("Asia/Shanghai"); echo $_SESSION['username'] ?></span>
+        !当前时间：<?php echo date("Y年m月d日 H时i分s秒") ?>
     </blockquote>
     <fieldset class="layui-elem-field" style="margin-left: 250px;margin-top: 40px">
         <legend>数据统计</legend>
@@ -88,32 +88,56 @@ if (!$_SESSION['username']){
                                 <ul class="layui-row layui-col-space10 layui-this" >
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
                                         <a href="">
-                                            <h3>文章数</h3>
-                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
+<!--                                            从数据库中取出文章数据-->
+                                            <?php
+                                            $mysql=new Db('comment');
+                                            $link=$mysql->link;
+                                            $sql="SELECT count(*) from comment";
+                                            $result=mysqli_query($link,$sql);
+                                            $results=mysqli_fetch_row($result);
+                                            ?>
+                                            <h3>评论数</h3>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px"><?php echo $results[0]; ?></p>
                                         </a>
                                     </li>
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
+                                        <?php
+                                        $sql="SELECT count(*) from user";
+                                        $result=mysqli_query($link,$sql);
+                                        $results=mysqli_fetch_row($result);
+                                        ?>
                                         <a href="javascript:;">
                                             <h3>会员数</h3>
-                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px"><?php echo $results[0]; ?></p>
                                         </a>
                                     </li>
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
                                         <a href="javascript:;">
-                                            <h3>回复数</h3>
+                                            <h3>网站点击数</h3>
                                             <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
                                         </a>
                                     </li>
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
+                                        <?php
+                                        $sql="SELECT count(*) from infor_goods";
+                                        $result=mysqli_query($link,$sql);
+                                        $results=mysqli_fetch_row($result);
+
+                                        ?>
                                         <a href="javascript:;">
                                             <h3>商品数</h3>
-                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px"><?php echo $results[0];?></p>
                                         </a>
                                     </li>
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
+                                        <?php
+                                        $sql="SELECT count(*) from shopping_cart";
+                                        $result=mysqli_query($link,$sql);
+                                        $results=mysqli_fetch_row($result);
+                                        ?>
                                         <a href="javascript:;">
-                                            <h3>商品数</h3>
-                                            <p style="color: blue;font-size: 30px;margin-top: 20px">66</p>
+                                            <h3>加购人数</h3>
+                                            <p style="color: blue;font-size: 30px;margin-top: 20px"><?php echo $results[0] ?></p>
                                         </a>
                                     </li>
 
@@ -124,7 +148,10 @@ if (!$_SESSION['username']){
         </div>
     </fieldset>
 <div class="content">
-    <iframe frameborder="0" src="./welcome.php"  width="100%" height="100%" scrolling="no"></iframe>
+    <iframe class="iframe" frameborder="0" src="./welcome.php"  width="100%" height="100%" scrolling="no">
+    </iframe>
+    <iframe class="iframe2" frameborder="0" src="./member_list.php"  width="100%" height="100%" scrolling="no">
+    </iframe>
 </div>
 </div>
 
@@ -186,6 +213,7 @@ if (!$_SESSION['username']){
     page[4].onmouseout=function () {
         page[4].style.backgroundColor='#e6e6e6';
     }
+
 </script>
 
 </body>
