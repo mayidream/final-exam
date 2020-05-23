@@ -1,0 +1,466 @@
+/*
+ *导航栏css样式
+ */
+.header{
+    width: 1200px;
+    height: 2500px;
+    margin: 0 auto;
+}
+.sign{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 60px;
+    font-size: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sign a{
+    color: #b07f3d;
+    text-decoration: none;
+}
+.sign a:hover{
+    outline: 0;
+    color:#eeeeee;
+}
+
+.cidaohang{
+    color:#868686;
+    font-size:16px;
+    font-family:"宋体";
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.right{
+    width:780px;
+    float:right;
+    padding-left:20px;
+}
+.title{
+    color:#333;
+    height:50px;
+    padding-bottom:10px;
+    line-height:26px;
+    border-bottom:1px solid #eee;
+    width:780px;
+    float:left;
+    font-family: "黑体";
+    font-size: 24px;
+}
+.zhuti1{
+    color:#868686;
+    width:120px;
+    float:left;
+    margin-top:20px;
+
+    font-size: 16px;
+}
+.zhuti2{
+
+    font-size:16px;
+    margin-top:20px;
+    float:right;
+    width:660px;
+    color:#ff8300;
+    float:left;
+}
+.xc1{width:120px;
+    color:#868686;
+
+    font-size:16px;
+    margin-top:20px;
+    height:25px;
+    float:left;
+}
+.xc2{
+    width:660px;
+    color:#868686;
+    font-size:16px;
+    margin-top:20px;
+    height:25px;
+    float:right;
+}
+.ts1{
+    font-size:14px;
+    margin-top:30px;
+    color:#ff8300;
+    float:left;
+    width:120px;
+}
+.ts2{
+    color:#868686;
+    margin-top:30px;
+    float:right;
+    width:660px;
+    font-size:14px;
+}
+.ts3{
+    margin-top:10px;
+    font-size:14px;
+    color:#ff8300;
+    float:left;
+    width:120px;
+}
+.ts4{
+    margin-top:10px;
+    color:#868686;
+    float:right;
+    width:660px;
+    font-size:14px;
+}
+.price1{
+    width:360px;
+    font-size:30px;
+    font-weight: bold;
+    height:25px;
+    color:#ff8300;
+    margin-top:10px;
+    float:left;
+}
+.price2{
+    float:right;
+    margin-left:10px;
+    width: 130px;
+    height: 42px;
+    border-radius: 3px;
+    background: #f80;
+    font-size: 18px;
+    color: #fff;
+    line-height: 42px;
+    text-align: center;
+    margin-top:10px;
+}
+.price2 a{color: #fff;}
+
+.price2 a:active{ }
+
+.price2 a:hover{}
+
+.price2 a:visited{color: #fff;}
+
+
+
+.notes{
+    width:1200px;
+    float:left;
+    font-size:12px;
+    color:#868686;
+    margin-top:30px;
+    margin-bottom:5px;
+}
+.detail{
+    width: 1198px;
+    border: 1px solid #ddd;
+    float:left;
+}
+.detail .navigation {
+    height: 42px;
+    border-bottom: 2px solid #f2952b;
+    width: inherit;
+    overflow: hidden;
+    top: 0;
+    z-index: 200;
+    background: #f9f9f9;
+}
+.detail .navigation li {
+    float: left;
+    border-right: 1px solid #ddd;
+    height:42px;
+    text-align:center;
+    width:110px;
+}
+.detail .navigation li a {
+    padding: 10px 20px;
+    font-size: 16px;
+    width:70px;
+    height:42px;
+    float:left;
+}
+.detail .navigation li.active a {
+    padding: 10px 20px;
+    color: #fff;
+    text-align:center;
+    width:70px;
+    height:42px;
+    background: #f2952b;
+    float:left;
+}
+.detail .sub-details {
+    padding: 0 20px;
+    width: 1158px;
+    background: #fff;
+    overflow: hidden;
+}
+.detail .detail-introduce {
+    color: #666;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.detail-introduce .title {
+    width: 100%;
+    font-size: 22px;
+    height: 25px;
+    line-height: 25px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ddd;
+
+}
+.detail .detail-introduce .title .ico {
+
+    width: 25px;
+    height: 25px;
+    float: left;
+    border-bottom: 2px solid #f80;
+    margin-right: 10px;
+    padding-bottom: 8px;
+    text-align:center;
+}
+.detail .anchor {
+    display: block;
+    float: left;
+    height: 1px;
+    margin-top: -40px;
+    width: 1px;
+}
+.detail .detail-introduce .sub-title {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #666;
+    font-weight: bold;
+    float:left;
+}
+.detail .detail-introduce ul {
+    color: #666;
+    padding: 0;
+    float:left;
+
+}
+.detail .detail-introduce img {
+    margin-right: 5px;
+    margin-bottom:30px;
+    float:left;
+}
+.detail .traffic {
+    width: inherit;
+    margin-top: 30px;
+    overflow: hidden;
+    float:left;
+}
+.detail .traffic .left {
+    width: 95px;
+    position: relative;
+    float: left;
+    height:300px;
+}
+.detail .traffic .left .days {
+    margin-left: 5px;
+    position: static;
+}
+.detail-introduce ul {
+    color: #666;
+    padding: 0;
+}
+.detail .traffic .left li:hover, .detailWrap .trafficWrap .leftWrap li.active {
+    background: #f90;
+    float:left;
+}
+.traffic .left li a {
+    width: inherit;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 0;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    text-align: center;
+}
+.detail .traffic .left li {
+    width: 80px;
+    height: 35px;
+    margin-bottom: 10px;
+    color: #fff;
+    background: #dbdbdb;
+    border-radius: 3px;
+    float:left;
+}
+.traffic .right2 {
+    width: 1000px;
+    height:450px;
+    float: left;
+}
+.d1{
+    float:left;
+    width:130px;
+    height:450px;
+    margin-left:20px;
+}
+.d11{
+    width:850px;
+    float:left;
+}
+.title2{
+    width:850px;
+    float:left;
+    color: #333;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+
+.content2{
+    width:850px;
+    float:left;
+    margin-top:30px;
+}
+.day11{
+    width:278px;
+    margin-right:5px;
+    margin-top:40px;
+    float:left;
+}
+.right3{
+    margin:0 auto;
+    width:1143px;
+    float:right;
+}
+.right4{
+    margin:0 auto;
+    width:1143px;
+    float:right;
+}
+.question{
+    float:left;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+.money{
+    float:left;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+.list {
+    position: relative;
+    border-bottom: 1px solid #cfcfcf;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    float:left;
+    width:1198px;
+}
+.list li {
+    float: left;
+    position: relative;
+    z-index: 1;
+    padding:0 10px;
+    font: 16px/18px microsoft yahei;
+    color: #f2952b;
+    border-left: 1px solid #f2952b;
+    margin-left: -1px;
+    *margin-left: -2px;
+    cursor: pointer;
+}
+.list li.active .ico {
+    display: block;
+    float:left;
+}
+
+.rev-list{
+    width:1198px;
+}
+.rev-item {
+    width:1198px;
+    margin-left: 42px;
+    padding: 12px 0;
+    border-bottom: 1px solid #efefef;
+    float:left;
+}
+.rev-item .avatar, .m-consult .avatar {
+    float: left;
+    margin-left: -35px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+
+}
+.rev-item .icon-dp {
+    float:left;
+    display: inline-block;
+    margin: 0 0 4px 2px;
+    width: 88px;
+    height: 22px;
+    background: url(/images/sales/detail-v4-sprites11.png) no-repeat 0 -160px;
+    vertical-align: middle;
+    overflow: hidden;
+    line-height: 100px;
+}
+
+
+.rev-item .text {
+    margin-bottom: 8px;
+    line-height: 18px;
+    float:left;
+    margin-left:-25px;
+    margin-top:10px;
+}
+.img{
+    float:left;
+    width:800px;
+    margin-top:10px;
+    margin-left:61px;
+    height:102px;
+}
+.img1{
+    margin-left:5px;
+}
+.rev-item .time{
+    color: #999;
+    float:left;
+    width:1198px;
+    margin-left:165px;
+    margin-top:10px;
+}
+.page {
+    width:1198px;
+    float:right;
+    overflow: hidden;
+    font-family: arial,Tahoma,Microsoft YaHei;
+}
+.page-box {
+    float: right;
+    display: inline;
+    margin: 0 -5px;
+}
+
+.page-item.disabled, .page-item.disabled:hover {
+    border: 1px solid #ddd;
+    cursor: not-allowed;
+    background: #fff;
+    color: #999;
+}
+.page-item.active {
+    border-color: #22c233;
+    background: #22c233;
+    cursor: default;
+    color: #fff;
+}
+.page-item {
+    float: left;
+    height: 28px;
+    margin: 0 5px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    cursor:pointer;
+    background: #fff;
+    color: #666;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+}
+.page-next, .page-prev {
+    font-size: 20px;
+    font-family: Simsun;
+}

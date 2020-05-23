@@ -1,0 +1,268 @@
+
+#zong{
+    margin: 0 auto;
+    width: 1200px;
+    height: 1780px;
+}
+#zhong{
+    width:1200px;
+    height:1550px;
+    margin: 0 auto;
+}
+#yi{
+    width:1200px;
+    height:340px;
+}
+#zuo{
+    width:500px;
+    height:310px;
+    float:left;
+    border: 2px solid #0CF;
+    -moz-border-radius: 15px;
+
+    -webkit-border-radius: 15px;
+
+    border-radius:15px;
+    margin-left:60px;
+    text-align:center;
+}
+#aa{
+    width:450px;
+    text-align:left;
+    height:15px;
+}
+#bb{
+    width:450px;
+    text-align:left;
+    height:45px;
+    margin-left:18px;
+}
+#cc{
+    width:450px;
+    text-align:left;
+    height:45px;
+    border: 1px #c2c2c2 solid;
+    border-radius: 10px ;
+    margin-left:18px;
+}
+#dd{
+    width:450px;
+    text-align:left;
+    margin-left:18px;
+    height:45px;
+    border: 1px solid;
+}
+#ee{
+    width:450px;
+    text-align:left;
+    margin-left:18px;
+    height:45px;
+    border: 1px solid;
+}
+#ff{
+    width:450px;
+    text-align:center;
+    margin-left:18px;
+    height:45px;
+    border: 1px solid;
+}
+#you{
+    width:520px;
+    height:300px;
+    float:right;
+    margin-right:20px;
+}
+[type="text"]{
+
+    width:280px;
+
+    height:28px;
+
+    border:#CCC 2px solid;
+
+    float:left;
+
+    margin-top:0px;
+
+    border-bottom-left-radius:15px;
+
+    border-top-left-radius:15px;
+
+    outline:none;}
+#er{
+    width:1200px;
+    height:400px;
+}
+#daohang {
+    text-align: center;
+    height:40px;
+}
+#daohang ul{
+    display: inline-block;
+}
+#daohang li{
+    float:left;
+    width:133px;
+    font-family:"黑体";
+    font-size:18px;
+    color:#868686;
+}
+#daohang li a{
+    display:block;
+    padding:5px 5px 5px 2em;
+    text-decoration:none;
+}
+#daohang li a:hover{
+    color:#EE7D00;
+}
+#ke{
+    width:1200px;
+    height:300px;
+    margin-top:10px;
+}
+#j{
+    background-image: url(../images/j.jpg);
+    width: 250px;
+    height: 300px;
+    float: left;
+    margin-left: 35px;
+    border-radius: 10px;
+    color: #333;
+    font-size: 15px;
+    font-family: "微软雅黑";
+}
+#x{
+    background-image: url(../images/x.jpg);
+    width: 250px;
+    height: 300px;
+    float: left;
+    margin-left: 45px;
+    border-radius: 10px;
+    color: #000;
+    font-family: "微软雅黑";
+    font-size: 15px;
+}
+#c{
+    background-image: url(../images/c.jpg);
+    width: 250px;
+    height: 300px;
+    float: left;
+    margin-left: 45px;
+    border-radius: 10px;
+    font-family: "微软雅黑";
+    color: #000;
+    font-size: 15px;
+}
+#l{
+    background-image: url(../images/l.jpg);
+    width:250px;
+    height:300px;
+    float: right;
+    margin-right:25px;
+    border-radius:10px;
+}
+#san{
+    width:1200px;
+    height:780px;
+}
+#min{
+    width:1200px;
+    height:360px;
+    margin-top:10px;
+}
+#su{
+    width:1200px;
+    height:360px;
+}
+#m1{
+    width:350px;
+    height:350px;
+    float:left;
+    margin-left:30px;
+}
+#m2{
+    width:350px;
+    height:350px;
+    float:left;
+    margin-left:45px;
+
+}
+#m3{
+    width:350px;
+    height:350px;
+    float:right;
+    margin-right:30px;
+
+}
+#m4{
+    width:350px;
+    height:350px;
+    float:left;
+    margin-left:30px;
+    margin-top:10px;
+}
+#m5{
+    width:350px;
+    height:350px;
+    float:left;
+    margin-left:45px;
+    margin-top:10px;
+}
+#m6{
+    width:350px;
+    height:350px;
+    float:right;
+    margin-right:30px;
+    margin-top:10px;
+
+}
+.n1{
+    width:350px;
+    height:221px;
+}
+.n2{
+    width:350px;
+    height:29px;
+    margin-top:10px;
+}
+.n3{
+    width:350px;
+    height:35px;
+}
+.n4{
+    width:350px;
+    height:20px;
+
+}
+.n5{
+    width:350px;
+    height:30px;
+    margin-top:5px;
+}
+#wei{
+    width: 1200px;
+    height: 180px;
+    background-image: url(../images/wei.jpg);
+    color: #FFF;
+    font-size: 14px;
+}
+#one{
+    width:400px;
+    height:120px;
+    float:left;
+}
+#two{
+    width: 450px;
+    height: 120px;
+    font-size: 14px;
+    float: left;
+    font-family: "微软雅黑";
+}
+#three{
+    width: 350px;
+    height: 120px;
+    float: right;
+}
+.div-inline {
+    display: inline
+}

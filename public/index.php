@@ -24,11 +24,11 @@
 <ul class="layui-nav" lay-filter="">
     <li class="sign"><a href=""><img src="images/logo.png" width="100px" height="50px"></a></li>
     <li class="layui-nav-item 0" style="margin-left: 80px"><a href="index.php">首页</a></li>
-    <li class="layui-nav-item "><a href="">U定制</a></li>
-    <li class="layui-nav-item"><a href="">我的客栈</a></li>
+    <li class="layui-nav-item "><a href="./details.php">U定制</a></li>
+    <li class="layui-nav-item"><a href="my_inn.php">我的客栈</a></li>
     <li class="layui-nav-item"><a href="">旅游攻略</a></li>
     <li class="layui-nav-item"><a href="">会员中心</a></li>
-    <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href=""><img src="images/购物车.png" width="20px" height="20px"></a></li>
+    <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href="shop.php"><img src="images/购物车.png" width="20px" height="20px"></a></li>
 
     <?php  session_start();
     if (@$_SESSION['username'] &&@$_COOKIE['username']){
@@ -68,20 +68,20 @@
 <!-- 条目中可以是任意内容，如：<img src=""> -->
 <div id="yi">
 <div id="zuo">
-<img src="<?php echo $results['pro_path']?>">
-<a href=""><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
-<p align="center" class="zt"><?php echo $results['pro_name'] ?></p>
-<p align="center" class="xzt"><?php echo @$results['commit'] ?></p>
+    <a href="details.php?pro_id=<?php echo $results['pro_id']?>"><img src="<?php echo $results['pro_path']?>"></a>
+<a href="details.php?pro_id=<?php echo $results['pro_id']?>"><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
+<p align="center" class="zt"><a href="details.php?pro_id=<?php echo $results['pro_id']?>"> <?php echo $results['pro_name'] ?></a></p>
+<p align="center" class="xzt"><a href="details.php?pro_id=<?php echo $results['pro_id']?>"> <?php echo @$results['commit'] ?></a></p>
 </div>
 <div id="zhong">
 <p align="center" class="bt">热门景点</p>
 <p align="center" class="xbt">POPULAR&nbsp;DESTINATION</p><br/>
-<a href=""><p align="center" class="jg">more&nbsp;&nbsp;&nbsp;&nbsp;></p></a><br/><br/>
+<a href="details.php?pro_id=<?php echo $results['pro_id']?>"><p align="center" class="jg">more&nbsp;&nbsp;&nbsp;&nbsp;></p></a><br/><br/>
     <?php $results=mysqli_fetch_assoc($result); ?>
-<img src="<?php echo $results['pro_path'] ?>" width="356" height="271">
-<a href=""><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
-<p align="center" class="zt"><?php echo $results['pro_name'] ?></p>
-<p align="center" class="xzt"><?php echo @$results['commit'] ?></p>
+<a href="details.php?pro_id=<?php echo $results['pro_id']?>"> <img src="<?php echo $results['pro_path'] ?>" width="356" height="271"></a>
+<a href="details.php?pro_id=<?php echo $results['pro_id']?>"><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
+<p align="center" class="zt"> <a href="details.php?pro_id=<?php echo $results['pro_id']?>"> <?php echo $results['pro_name'] ?></a></p>
+    <p align="center" class="xzt"><a href="details.php?pro_id=<?php echo $results['pro_id']?>"> <?php echo @$results['commit'] ?></a></p>
 </div>
 <div id="you">
 <br/>
@@ -91,10 +91,10 @@
 <p><input type="text" placeholder="&nbsp;请搜索你喜欢的地方"><a href="#"><input type="button" value="搜 索"></a></p>
 <br/><br/><br/><br/>
     <?php $results=mysqli_fetch_assoc($result); ?>
-<img src="<?php echo $results['pro_path'] ?>" width="349" height="270">
-<a href="#"><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
-<p align="center" class="zt"><?php echo @$results['pro_name'] ?></p>
-<p align="center" class="xzt"><?php echo @$results['commit'] ; ?></p>
+<a href="details.php?pro_id=<?php echo $results['pro_id']?>"><img src="<?php echo $results['pro_path'] ?>" width="349" height="270"></a>
+    <a href="details.php?pro_id=<?php echo $results['pro_id']?>"><p align="right" class="jg">￥<?php echo @$results['price'] ?></p></a>
+<p align="center" class="zt"><a href="details.php?pro_id=<?php echo $results['pro_id']?>"> <?php echo @$results['pro_name'] ?></a></p>
+    <p align="center" class="xzt"><a href="details.php?pro_id=<?php echo $results['pro_id']?>"> <?php echo @$results['commit'] ; ?></a></p>
 </div>
 </div>
 <div id="er">
@@ -119,20 +119,20 @@
     $results=mysqli_fetch_assoc($result);
     ?>
 
-	<img src="<?php echo $results['pro_path']?>">
+    <a href="details.php?pro_id=<?php echo $results['tehui_id']?>"> <img src="<?php echo $results['pro_path']?>"></a>
 	<div id="w1">
-	<p align="center" class="ss"><?php echo $results['pro_name'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <p align="center" class="dc"><?php echo $results['commit'] ?></p>
+        <p align="center" class="ss"><a href="details.php?pro_id=<?php echo $results['tehui_id']?>"> <?php echo $results['pro_name'] ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> </p>
+        <p align="center" class="dc"><a href="details.php?pro_id=<?php echo $results['tehui_id']?>"> <?php echo $results['commit'] ?></a></p>
 	</div>
-	<div id="an1" align="left"><a href="#"><input class="button1" type="button" value="立即预定"/></a></div>
+	<div id="an1" align="left"><a href="details.php?pro_id=<?php echo $results['tehui_id']?>"><input class="button1" type="button" value="立即预定"/></a></div>
   </div>
 <div id="eyou">
 	<div id="ys">
 	<div id="ys1">
         <?php $results=mysqli_fetch_assoc($result); ?>
-		<div><img src="<?php echo @$results['pro_path']?>"></div>
-		<p align="center" class="xg"><?php echo @$results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div>
+        <div><a href="details.php?pro_id=<?php echo $results['tehui_id']?>"> <img src="<?php echo @$results['pro_path']?>"></a></div>
+        <p align="center" class="xg"><a href="details.php?pro_id=<?php echo $results['tehui_id']?>" > <?php echo @$results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+		<div id="an2"  align="left"><a href="details.php?pro_id=<?php echo $results['tehui_id']?>" ><input class="button"  type="button"  value="立即预定"/></a></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
 	<div id="ys2"><div><img src="<?php echo $results['pro_path']?>"></div>
