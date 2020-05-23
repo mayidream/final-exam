@@ -14,11 +14,11 @@
 <ul class="layui-nav" lay-filter="">
     <li class="sign"><a href=""><img src="./images/logo.png" width="100px" height="50px"></a></li>
     <li class="layui-nav-item "><a href="index.php">首页</a></li>
-    <li class="layui-nav-item "><a href="">U定制</a></li>
-    <li class="layui-nav-item"><a href="">我的客栈</a></li>
-    <li class="layui-nav-item"><a href="">旅游攻略</a></li>
+    <li class="layui-nav-item "><a href="details.php">U定制</a></li>
+    <li class="layui-nav-item"><a href="my_inn.php">我的客栈</a></li>
+    <li class="layui-nav-item"><a href="gonglue.php">旅游攻略</a></li>
     <li class="layui-nav-item"><a href="">会员中心</a></li>
-    <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href=""><img src="images/购物车.png" width="20px" height="20px"></a></li>
+    <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href="shop.php"><img src="images/购物车.png" width="20px" height="20px"></a></li>
 
     <li class="sign" style="list-style: none"><a href="">登录</a> |<a href="sign_up.php">&nbsp;注册</a> </li>
 </ul>
