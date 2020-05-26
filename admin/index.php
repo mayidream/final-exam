@@ -26,7 +26,7 @@ require_once 'autoload.php';
 <!--    logo-->
     <a href=""> <img src="image/logo.jpg" width="100" height="50"></a>
 </div>
-    <div class="user"><a href="../public/index.php">前台首页</a> </div>
+    <div class="user"><a href="../public/index.php" style="color: #fff">前台首页</a> </div>
 <div class="user layui-icon"> <ul class="li">
         <li>
             <?php echo $_SESSION['username'] ?>&#xe625;

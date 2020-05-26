@@ -62,7 +62,7 @@
 <div id="er">
     <?php
     require_once 'autoload.php';
-    $username=$_SESSION['username'];
+    $username=@$_SESSION['username'];
     $user=new Db('user');
     $link=$user->link;
     $user_sql="SELECT * FROM user where uname='$username'";
@@ -92,7 +92,7 @@
     <li><a href="#"><p style="color:#333; font-size:16px" >￥<?php echo $hot_area_results['price'] ?></p></a></li>
     <li><a href="#"><p class="on"></p></a></li>
     <li><a href="#"><p style="color:#C33; font-size:16px" >￥<?php echo $hot_area_results['price'] ?></p></a></li>
-    <li><a href="#" style="color: red"><?php if ($status==1){ echo '未付款';}else{echo '已付款';} ?></a><br/><a href="shopping_delete.php?user_id=<?php echo $user_id;?>&&pro_id=<?php echo $pro_id;?>">删除</a></li>
+    <li><a href="fukuan.php?user_id=<?php echo $user_id;?>" style="color: red"> <?php if ($status==1){ echo '未付款';}else{echo '已付款';} ?></a><br/><a href="shopping_delete.php?user_id=<?php echo $user_id;?>&&pro_id=<?php echo $pro_id;?>">删除</a></li>
 </ul>
 </div>
     <?php }?>

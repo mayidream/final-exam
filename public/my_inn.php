@@ -63,20 +63,17 @@
     </div>
 </div>
 <div>
-    <hr>
-    <div class="" style=" float:left;width: 200px; margin-left: 20px; height: 40px;border: 1px #c2c2c2 solid; border-radius: 10px"> <font style="line-height: 40px;color:#c2c2c2;vertical-align: center">入住</font>
-        <input type="text" class="layui-input" id="test2" style="border:none; width: 120px;height: 40px;float: right">
+    <div class="" style=" float:left;width: 200px; margin-left: 20px; height: 40px;border: 1px #c2c2c2 solid; border-radius: 10px;margin-top: 13px"> <font style="line-height: 40px;color:#c2c2c2;vertical-align: center">入住</font>
+        <input type="text" class="layui-input" id="test2" style="border:none; width: 120px;height: 40px;float: right;">
     </div>
-    <div class="" style="float:left;width: 200px; margin-left: 20px; height: 40px;border: 1px #c2c2c2 solid; border-radius: 10px"> <font style="line-height: 40px;color:#c2c2c2;vertical-align: center">离店</font>
+    <div class="" style="margin-top: 13px;float:left;width: 200px; margin-left: 20px; height: 40px;border: 1px #c2c2c2 solid; border-radius: 10px"> <font style="line-height: 40px;color:#c2c2c2;vertical-align: center">离店</font>
         <input type="text" class="layui-input" id="test3" style="border:none; width: 120px;height: 40px;float: right">
     </div>
 </div>
-    <hr>
-<div style="width: 450px;height: 40px;border: 1px #c2c2c2 solid; border-radius: 10px;margin-left: 20px">
-<font color="c2c2c2" style="float: left;margin-left: 20px;line-height: 40px;vertical-align: center">关键词</font>
-<input type="text" placeholder="试试搜 首都机场" style="border: none;height:40px;margin-left: 20px;line-height: 40px; vertical-align:center">
+<div style="height: 130px;width: 450px">
+<font color="c2c2c2" style="margin-top: 10px;float: left;margin-left: 20px;line-height: 40px;vertical-align: center">关键词</font>
+<input type="text" placeholder="试试搜 首都机场" style="margin-top: 10px;border: none;height:40px;margin-left: 20px;line-height: 40px; vertical-align:center">
 </div>
-    <hr>
     <div >
         <input type="submit" name="search" value="搜索" style=" color:#fff;height: 40px; width: 450px;border: 1px #c2c2c2 solid;border-radius: 10px;background-color: #FF5722">
     </div>
