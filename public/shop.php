@@ -52,7 +52,7 @@
 <div id="daohang">
 <ul>
     <li class="zt"><a href="my_inn.php"><font color="#EE7D00">全部商品</font></a></li>
-    <li class="zt"><a href="#">降价商品</a></li>
+    <li class="zt"><a href="dingdanguanli.php">我的订单</a></li>
     <li class="zt"><a href="#">库存紧张</a></li>
     
 </ul>
