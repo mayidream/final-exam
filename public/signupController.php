@@ -51,13 +51,13 @@ if (@$_POST['submit']=='注册') {
         } else {
 
 
-            $sql = "INSERT INTO `user` (`user_id`, `uname`, `telphone`, `upass`, `create_time`, `update_time`) VALUES (NULL, '$username', '$telphone', '$password', '$create_time', NULL);";
+            $sql = "INSERT INTO `user` (`user_id`, `uname`, `telphone`, `upass`, `create_time`, `update_time`) VALUES (NULL, '$username', '$telphone', '$password', '$create_time', NULL );";
             $result = mysqli_query($link, $sql);
             if ($result == true) {
                 $url = 'sign_in.php';
                 skip($url, '注册成功');
             } else {
-                echo '发生未知错误';
+               var_dump($result);
             }
 
         }

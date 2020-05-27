@@ -24,7 +24,7 @@
 <ul class="layui-nav" lay-filter="">
     <li class="sign"><a href=""><img src="images/logo.png" width="100px" height="50px"></a></li>
     <li class="layui-nav-item " style="margin-left: 100px"><a href="index.php">首页</a></li>
-    <li class="layui-nav-item "><a href="details.php">U定制</a></li>
+    <li class="layui-nav-item "><a href="Udingzhi.php">U定制</a></li>
     <li class="layui-nav-item"><a href="my_inn.php">我的客栈</a></li>
     <li class="layui-nav-item"><a href="gonglue.php">旅游攻略</a></li>
     <li class="layui-nav-item"><a href="">会员中心</a></li>

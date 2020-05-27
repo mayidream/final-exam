@@ -1,6 +1,9 @@
 <?php
 require_once 'autoload.php';
 session_start();
+if (!$_SESSION['username']){
+    header('location:sign_in.php');
+}
 $pro_id=$_GET['pro_id'];
 $username=$_SESSION['username'];
 $user=new Db('user');
@@ -13,8 +16,8 @@ $shopping_cart=new Db('shopping_cart');
 $shopping_cart_sql="insert into shopping_cart(id,pro_id,user_id,buy) value (null,'$pro_id','$user_id',1)";
 $shopping_cart_result=mysqli_query($link,$shopping_cart_sql);
 if ($shopping_cart_result){
-    header('refresh:5;url=details.php');
-    echo '加入购物车成功,三秒后自动跳转到<a href="details.php" style="color: red;text-decoration: none">产品详情页</a>';
+    header('refresh:5;url=chanpingxiangqing.php');
+    echo '加入购物车成功,三秒后自动跳转到<a href="chanpingxiangqing.php" style="color: red;text-decoration: none">产品详情页</a>';
 }else{
     echo '加入购物车失败，请检查数据库';
 }

@@ -13,13 +13,14 @@
 
 
 </head>
-<?php session_start(); ?>
+<?php session_start();
+?>
 <body>
 <div class="header">
 <ul class="layui-nav" lay-filter="">
     <li class="sign"><a href=""><img src="images/logo.png" width="100px" height="50px"></a></li>
-    <li class="layui-nav-item "><a href="index.php">首页</a></li>
-    <li class="layui-nav-item "><a href="details.php">U定制</a></li>
+    <li class="layui-nav-item " style="margin-left: 100px"><a href="index.php">首页</a></li>
+    <li class="layui-nav-item "><a href="Udingzhi.php">U定制</a></li>
     <li class="layui-nav-item layui-this"><a href="my_inn.php">我的客栈</a></li>
     <li class="layui-nav-item"><a href="gonglue.php">旅游攻略</a></li>
     <li class="layui-nav-item"><a href="">会员中心</a></li>
@@ -131,99 +132,36 @@
 	<li><a href="#">more >></a></li>
 </ul>
 </div>
+    <?php
+    require_once 'autoload.php';
+    $mysql=new Db('products');
+    $link=$mysql->link;
+    $sql="select * from products";
+    $result=mysqli_query($link,$sql);
+    while ($res=mysqli_fetch_assoc($result)){
+
+
+    ?>
+
 <div id="min"><!--民-->
 <div id="m1"><!--m1-->
-<div class="n1"><a href="#"><img src="images/min1.jpg" width="350" height="221"></a></div>
+<div class="n1"><a href="#"><img src="<?php echo $res['pro_path']?>" width="350" height="221"></a></div>
 <div class="n2">
 <p style="background-color: #edf4f8; width: 60px;margin-left: 5px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center; float:left;">今日甩卖</p>
 <p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">连住优惠</p>
 <p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">超赞房东</p>
 </div>
-<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="#">小桥流水农家民宿</a></strong></p></div>
-<div class="n4"><p style="font-family:'微软雅黑'"><strong style="color: #6C0; margin-left:10px;">4.8分</strong>/&nbsp;66条点评·一室一厅两人一床·洛阳</p></div>
+<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="#"><?php echo $res['pro_name']?></a></strong></p></div>
+<div class="n4"><p style="font-family:'微软雅黑'"><strong style="color: #6C0; margin-left:10px;"><?php echo $res['grade']?>分</strong>/&nbsp;66条点评·<?php echo $res['pro_introduction']?></p></div>
 <div class="n5">
 <p style="color:#ff6c4f; font-family:'微软雅黑'; margin-left:10px;">￥
-<strong style="font-size:22px">150</strong>/晚
+<strong style="font-size:22px"><?php echo $res['price']?></strong>/晚
 </p>
 </div>
 </div><!--m1-->
-<div id="m2"><!--m2-->
-<div class="n1"><a href="#"><img src="images/min2.jpg" width="350" height="221"></a></div>
-<div class="n2">
-<p style="background-color: #edf4f8; width: 60px;margin-left: 5px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center; float:left;">免费停车</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">超赞房东</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">浪漫约会</p>
-</div>
-<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="#">观海景度假民宿</a></strong></p></div>
-<div class="n4"><p style="font-family:'微软雅黑'"><strong style="color: #6C0; margin-left:10px;">5.0分</strong>/&nbsp;86条点评·一室一厅两人一床·青岛</p></div>
-<div class="n5">
-<p style="color:#ff6c4f; font-family:'微软雅黑'; margin-left:10px;">￥
-<strong style="font-size:22px">300</strong>/晚
-</p>
-</div>
-</div><!--m2-->
-<div id="m3"><!--m3-->
-<div class="n1"><a href="#"><img src="images/min3.jpg" width="350" height="221"></a></div>
-<div class="n2">
-<p style="background-color: #edf4f8; width: 60px;margin-left: 5px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center; float:left;">携宠出行</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">今日特惠</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">免费停车</p>
-</div>
-<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="#">九叔公民宿</a></strong></p></div>
-<div class="n4"><p style="font-family:'微软雅黑'"><strong style="color: #6C0; margin-left:10px;">5.0分</strong>/&nbsp;111条点评·一室两人一床·香港九龙</p></div>
-<div class="n5">
-<p style="color:#ff6c4f; font-family:'微软雅黑'; margin-left:10px;">￥
-<strong style="font-size:22px">180</strong>/晚
-</p>
-</div>
-</div><!--m3-->
-</div><!--民-->
-<div id="su"><!--宿-->
-<div id="m4" class="div-inline"><!--m4-->
-<div class="n1"><a href="#"><img src="images/min4.jpg" width="350" height="221"></a></div>
-<div class="n2">
-<p style="background-color: #edf4f8; width: 60px;margin-left: 5px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center; float:left;">做饭方便</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">设有投影</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">超赞房东</p>
-</div>
-<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="#">「一百分」莫干山乡村小别墅</a></strong></p></div>
-<div class="n4"><p style="font-family:'微软雅黑'"><strong style="color: #6C0; margin-left:10px;">4.8分</strong>/&nbsp;33条点评·一室一厅两人一床·莫干山</p></div>
-<div class="n5">
-<p style="color:#ff6c4f; font-family:'微软雅黑'; margin-left:10px;">￥
-<strong style="font-size:22px">221</strong>/晚
-</p>
-</div>
-</div><!--m4-->
-<div id="m5" class="div-inline"><!--m5-->
-<div class="n1"><a href="#"><img src="images/min5.jpg" width="350" height="221"></a></div>
-<div class="n2">
-<p style="background-color: #edf4f8; width: 60px;margin-left: 5px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center; float:left;">设有投影</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">连住优惠</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">超赞房东</p>
-</div>
-<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="#">「一百分」黄山观景度假修养民宿</a></strong></p></div>
-<div class="n4"><p style="font-family:'微软雅黑'"><strong style="color: #6C0; margin-left:10px;">5.0分</strong>/&nbsp;225条点评·一室一厅两人一床·黄山</p></div>
-<div class="n5">
-<p style="color:#ff6c4f; font-family:'微软雅黑'; margin-left:10px;">￥
-<strong style="font-size:22px">399</strong>/晚
-</p>
-</div>
-</div><!--m5-->
-<div id="m6" class="div-inline"><!--m6-->
-<div class="n1"><a href="#"><img src="images/min6.jpg" width="350" height="221"></a></div>
-<div class="n2">
-<p style="background-color: #edf4f8; width: 60px;margin-left: 5px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center; float:left;">免费停车</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">连住优惠</p>
-<p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">超赞房东</p>
-</div>
-<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="#">北京隐山小筑民宿</a></strong></p></div>
-<div class="n4"><p style="font-family:'微软雅黑'"><strong style="color: #6C0; margin-left:10px;">5.0分</strong>/&nbsp;76条点评·一室一厅两人一床·隐山</p></div>
-<div class="n5">
-<p style="color:#ff6c4f; font-family:'微软雅黑'; margin-left:10px;">￥
-<strong style="font-size:22px">350</strong>/晚
-</p>
-</div>
-</div><!--m6-->
+    <?php } ?>
+
+
 </div><!--宿-->
 </div><!--民宿推荐-->
 

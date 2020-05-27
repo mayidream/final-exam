@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>U定制</title>
+    <title>产品详情</title>
     <link rel="stylesheet" href="./layui/css/layui.css">
     <script src="./layui/layui.js"></script>
-    <link rel="stylesheet" href="./css/U_dingzhi.css">
+    <link rel="stylesheet" href="css/xiangqingye.css">
     <style>
         .test{
             width: 400px;
@@ -22,7 +22,7 @@
     <ul class="layui-nav" lay-filter="">
         <li class="sign"><a href=""><img src="images/logo.png" width="100px" height="50px"></a></li>
         <li class="layui-nav-item " style="margin-left: 80px"><a href="index.php">首页</a></li>
-        <li class="layui-nav-item layui-this "><a href="./details.php">U定制</a></li>
+        <li class="layui-nav-item "><a href="Udingzhi.php">U定制</a></li>
         <li class="layui-nav-item"><a href="my_inn.php">我的客栈</a></li>
         <li class="layui-nav-item"><a href="gonglue.php">旅游攻略</a></li>
         <li class="layui-nav-item"><a href="">会员中心</a></li>
@@ -57,7 +57,7 @@
 
     ?>
 <!--  这下面写HTML代码-->
-<div class="cidaohang"><a href="./index.php">首页</a> > <a href="details.php">u定制</a> > <a href=""><?php echo $results['pro_name']  ?></a></div>
+<div class="cidaohang"><a href="./index.php">首页</a> > <a href="chanpingxiangqing.php">u定制</a> > <a href=""><?php echo $results['pro_name']  ?></a></div>
 <div class="test">
   <div class="layui-carousel" id="test1">
     <div carousel-item>
@@ -88,8 +88,10 @@
      <div algin="left" class="xc1">参考价格：</div>
     <div align="left" class="price1"> ￥<?php echo $results['price'] ?></div>
      <div align="left" class="price2"><a href="">立即定制</a></div>
-      <?php $pro_id=@$_GET['pro_id']; ?>
-     <div align="left" class="price2"><a href="shopController.php?pro_id=<?php echo $pro_id; ?>" class="shop">加入购物车</a></div>
+      <?php $pro_id=@$_GET['pro_id'];
+
+      ?>
+     <div align="left" class="price2"><a href="<?php echo 'shopController.php?pro_id='. $pro_id;?>" class="shop">加入购物车</a></div>
   </div> 
 </div>
 
