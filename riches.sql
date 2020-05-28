@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50505
 File Encoding         : 65001
 
-Date: 2020-05-23 17:46:22
+Date: 2020-05-28 16:12:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -28,20 +28,20 @@ CREATE TABLE `admin` (
   `type` int(11) NOT NULL DEFAULT 2 COMMENT '管理员权限',
   PRIMARY KEY (`ad_id`),
   UNIQUE KEY `ad_uname` (`ad_uname`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COMMENT='管理员登录表';
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COMMENT='管理员登录表';
 
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
-INSERT INTO `admin` VALUES ('1', 'admins', '123456', null, '1590116758', '1');
+INSERT INTO `admin` VALUES ('1', 'admin', 'admin', null, '1590632026', '1');
 INSERT INTO `admin` VALUES ('2', 'yinxiaolong', 'yinxiaolong', null, null, '1');
 INSERT INTO `admin` VALUES ('3', 'jiaxuechao', 'jiaxuechao', null, null, '1');
 INSERT INTO `admin` VALUES ('4', 'rongqing', 'rongqing', null, null, '1');
 INSERT INTO `admin` VALUES ('5', 'dingyixin', 'dingyixin', null, null, '1');
 INSERT INTO `admin` VALUES ('6', 'jicanlong', 'jicanlong', null, null, '2');
 INSERT INTO `admin` VALUES ('7', 'qingyanrui', 'qiyanrui', null, null, '2');
-INSERT INTO `admin` VALUES ('9', '殷小龙', '123', null, null, '2');
 INSERT INTO `admin` VALUES ('10', 'aaas', '123456', '1590125496', '1590125513', '2');
+INSERT INTO `admin` VALUES ('12', '1234567', '123456', '1590584958', '1590585086', '1');
 
 -- ----------------------------
 -- Table structure for comment
@@ -89,24 +89,32 @@ INSERT INTO `hot_area` VALUES ('3', '巴黎卡|大山7日游', 'images/7.png', '
 INSERT INTO `hot_area` VALUES ('4', 'test2', '/test/test2', '', '', '2500', '', null, null);
 
 -- ----------------------------
--- Table structure for infor_goods
+-- Table structure for products
 -- ----------------------------
-DROP TABLE IF EXISTS `infor_goods`;
-CREATE TABLE `infor_goods` (
+DROP TABLE IF EXISTS `products`;
+CREATE TABLE `products` (
   `pro_id` int(11) NOT NULL AUTO_INCREMENT,
   `pro_name` varchar(255) NOT NULL,
-  `themo` varchar(255) NOT NULL,
-  `tese` varchar(255) NOT NULL,
-  `price` int(11) NOT NULL,
-  `pro_construct` varchar(255) NOT NULL,
   `pro_path` varchar(255) NOT NULL,
-  `pro_commit` varchar(255) NOT NULL,
+  `grade` varchar(10) NOT NULL,
+  `pro_introduction` varchar(255) NOT NULL,
+  `price` varchar(10) NOT NULL,
+  `create_time` varchar(255) DEFAULT NULL,
+  `update_time` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`pro_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of infor_goods
+-- Records of products
 -- ----------------------------
+INSERT INTO `products` VALUES ('1', '小桥流水农家民宿', 'images/min1.jpg', '4', '66条点评·一室一厅两人一床·洛阳', '150', null, null);
+INSERT INTO `products` VALUES ('2', '观海景度假民宿', 'images/min2.jpg', '5', '一室一厅两人一床·青岛', '300', null, null);
+INSERT INTO `products` VALUES ('3', '九叔公民宿', 'images/min3.jpg', '5', '一室两人一床·香港九龙', '180', '', null);
+INSERT INTO `products` VALUES ('4', '「一百分」莫干山乡村小别墅', 'images/min4.jpg', '5', '一室一厅两人一床·莫干山', '221', null, null);
+INSERT INTO `products` VALUES ('5', '「一百分」黄山观景度假修养民宿', 'images/min5.jpg', '5', '一室一厅两人一床·黄山', '399', null, null);
+INSERT INTO `products` VALUES ('6', '北京隐山小筑民宿', 'images/min6.jpg', '5', '一室一厅两人一床·隐山', '350', null, null);
+INSERT INTO `products` VALUES ('7', 'test1', 'images/min6.jpg', '10', 'test1', '182', null, '1590651606');
+INSERT INTO `products` VALUES ('10', 'asda', './images/931590651901.png', 'asdsad', 'asasd', '100', '1590651901', '1590651914');
 
 -- ----------------------------
 -- Table structure for shopping_cart
@@ -118,14 +126,12 @@ CREATE TABLE `shopping_cart` (
   `user_id` int(11) NOT NULL,
   `buy` int(11) NOT NULL DEFAULT 1 COMMENT '1代表未付款2代表已付款',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of shopping_cart
 -- ----------------------------
-INSERT INTO `shopping_cart` VALUES ('1', '1', '1', '1');
-INSERT INTO `shopping_cart` VALUES ('3', '3', '1', '1');
-INSERT INTO `shopping_cart` VALUES ('4', '2', '1', '1');
+INSERT INTO `shopping_cart` VALUES ('13', '3', '1', '2');
 INSERT INTO `shopping_cart` VALUES ('9', '1', '4', '2');
 
 -- ----------------------------
@@ -187,17 +193,18 @@ CREATE TABLE `user` (
   `update_time` varchar(255) DEFAULT '' COMMENT '更新时间',
   `address` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`user_id`),
-  UNIQUE KEY `uname` (`uname`),
-  CONSTRAINT `FK_ID` FOREIGN KEY (`user_id`) REFERENCES `comment` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=12362 DEFAULT CHARSET=utf8 COMMENT='用户登录表';
+  UNIQUE KEY `uname` (`uname`)
+) ENGINE=InnoDB AUTO_INCREMENT=12367 DEFAULT CHARSET=utf8 COMMENT='用户登录表';
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('1', 'admin', 'admin', 'admin', null, '1590115856', '');
+INSERT INTO `user` VALUES ('1', 'admin', 'admin', 'admin', null, '1590632081', '');
 INSERT INTO `user` VALUES ('2', 'yinxiaolong', '13629874324', '123456', '1589978471', '1590116078', '');
-INSERT INTO `user` VALUES ('3', 'asd', '12345678912', '147258369', null, '', '河南省夏邑县');
-INSERT INTO `user` VALUES ('4', '123', null, '123', null, '', null);
+INSERT INTO `user` VALUES ('3', '123', null, '123', null, '', null);
+INSERT INTO `user` VALUES ('4', '1', '1', '1', null, null, null);
+INSERT INTO `user` VALUES ('5', '1234', '1234', '1234', '1590484982', null, null);
+INSERT INTO `user` VALUES ('6', '12', '12', '12', '1590485015', null, null);
 
 -- ----------------------------
 -- Table structure for you_speak
