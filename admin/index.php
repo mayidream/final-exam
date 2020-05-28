@@ -52,9 +52,9 @@ require_once 'autoload.php';
         </dl>
     </li>
     <li class="layui-nav-item">
-        <a href="javascript:;">&#xe63c; 订单管理</a>
+        <a href="javascript:;">&#xe63c; 产品管理</a>
         <dl class="layui-nav-child">
-            <dd><a href="">&nbsp;&nbsp;订单列表</a></dd>
+            <dd><a href="products_list.php">&nbsp;&nbsp;产品详情</a></dd>
         </dl>
     </li>
         <li class="layui-nav-item">
@@ -64,20 +64,15 @@ require_once 'autoload.php';
                 <dd><a href="">&nbsp;&nbsp;角色列表</a></dd>
             </dl>
         </li>
-        <li class="layui-nav-item">
-            <a href="javascript:;">&#xe63c;订单管理</a>
-            <dl class="layui-nav-child">
-                <dd><a href=""> &nbsp;&nbsp;订单列表</a></dd>
-            </dl>
-        </li>
+
     </ul>
 <!--右侧导航栏结束-->
 <!--中间内容开始-->
 <div class="x-body" >
     <blockquote class="layui-elem-quote" style="margin-left: 210px; margin-top: 20px">
         欢迎管理员:
-        <span class="x-red" style="color: red"><?php date_default_timezone_set("Asia/Shanghai"); echo $_SESSION['username'] ?></span>
-        !当前时间：<?php echo date("Y年m月d日 H时i分s秒") ?>
+        <span class="x-red" style="color: red;"><?php date_default_timezone_set("Asia/Shanghai"); echo $_SESSION['username'] ?></span>
+        !当前时间：<?php echo  date('Y年m月d日') ?>
     </blockquote>
     <fieldset class="layui-elem-field" style="margin-left: 250px;margin-top: 40px">
         <legend>数据统计</legend>
@@ -119,7 +114,7 @@ require_once 'autoload.php';
                                     </li>
                                     <li class="layui-col-xs2" style="background-color: #e6e6e6;margin-right: 10px">
                                         <?php
-                                        $sql="SELECT count(*) from infor_goods";
+                                        $sql="SELECT count(*) from products";
                                         $result=mysqli_query($link,$sql);
                                         $results=mysqli_fetch_row($result);
 

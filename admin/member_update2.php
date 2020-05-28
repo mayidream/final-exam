@@ -10,14 +10,6 @@ $password=$_POST['password'];
 $telphone=$_POST['telphone'];
 $msql=new Db('user');
 $link=$msql->link;
-$sql="select * from user where uname='$uname'";
-$result=mysqli_query($link,$sql);
-$results=mysqli_fetch_assoc($result);
-if($results){
-    $_SESSION['error']='此用户名已存在';
-    header('location:member_update.php');
-}else{
-    $_SESSION['error']='';
     date_default_timezone_set("Asia/Shanghai");
     $update_time=time();
     $sql="update user set uname='$uname',upass='$password',telphone='$telphone',update_time='$update_time' where user_id=$user_id";
@@ -27,6 +19,5 @@ if($results){
     }else{
         echo '数据插入失败';
     }
-}
 
 

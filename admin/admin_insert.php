@@ -19,7 +19,7 @@ session_start();
         <div class="layui-input-inline">
             <input type="text"  name="uname" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
         </div>
-        <div class="layui-form-mid layui-word-aux" ><font color="red"><?php if ($_SESSION['error']){echo $_SESSION['error'];}else echo '*为必填项'?></font> </div>
+        <div class="layui-form-mid layui-word-aux" ><font color="red"><?php if ($_SESSION['error']){echo $_SESSION['error'];}?></font> </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">密码:</label>
