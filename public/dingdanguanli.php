@@ -27,7 +27,7 @@
     <li class="layui-nav-item "><a href="Udingzhi.php">U定制</a></li>
     <li class="layui-nav-item"><a href="my_inn.php">我的客栈</a></li>
     <li class="layui-nav-item"><a href="gonglue.php">旅游攻略</a></li>
-    <li class="layui-nav-item"><a href="">会员中心</a></li>
+    <li class="layui-nav-item"><a href="huiyuan.php">会员中心</a></li>
     <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href="shop.php"><img src="images/购物车.png" width="20px" height="20px"></a></li>
 
     <?php session_start();
@@ -286,7 +286,7 @@
 <div style="height:20px;width:1200px"></div><!--留空 -->
 
 <div id="one" class="div-inline">
-<div style="height:40px; width:400px;float:right; text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/logo.jpg" width="100"></div><!--空格对齐 -->
+<div style="height:40px; width:400px;float:right; text-align:center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/logo1.png" width="100"></div><!--空格对齐 -->
 <div style="height: 60px; width: 400px; float: right; ">
 <div style="height: 60px; width: 30px; float: left; "></div><!--留空 -->
 <div style="height: 60px; width: 170px; float: right; color: #FFF; font-family: '微软雅黑';">电话：66668888<br/>邮箱：66668888<br/>地址：河南牧业经济学院</div>

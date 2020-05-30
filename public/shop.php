@@ -32,7 +32,7 @@ if (!@$_SESSION['username']&&!@$_COOKIE['username']){
     <li class="layui-nav-item "><a href="Udingzhi.php">U定制</a></li>
     <li class="layui-nav-item"><a href="my_inn.php">我的客栈</a></li>
     <li class="layui-nav-item"><a href="gonglue.php">旅游攻略</a></li>
-    <li class="layui-nav-item"><a href="">会员中心</a></li>
+    <li class="layui-nav-item"><a href="huiyuan.php">会员中心</a></li>
     <li class="layui-nav-item layui-this" style="margin-left: 20px ; margin-right: 20px"><a href="shop.php"><img src="images/购物车.png" width="20px" height="20px"></a></li>
 
     <?php
