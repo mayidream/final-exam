@@ -23,7 +23,7 @@
     <li class="layui-nav-item "><a href="Udingzhi.php">U定制</a></li>
     <li class="layui-nav-item layui-this"><a href="my_inn.php">我的客栈</a></li>
     <li class="layui-nav-item"><a href="gonglue.php">旅游攻略</a></li>
-    <li class="layui-nav-item"><a href="">会员中心</a></li>
+    <li class="layui-nav-item"><a href="huiyuan.php">会员中心</a></li>
     <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href="shop.php"><img src="images/购物车.png" width="20px" height="20px"></a></li>
 
     <?php
@@ -145,13 +145,13 @@
 
 <div id="min"><!--民-->
 <div id="m1"><!--m1-->
-<div class="n1"><a href="#"><img src="<?php echo $res['pro_path']?>" width="350" height="221"></a></div>
+<div class="n1"><a href="chanpingxiangqing.php"><img src="<?php echo $res['pro_path']?>" width="350" height="221"></a></div>
 <div class="n2">
 <p style="background-color: #edf4f8; width: 60px;margin-left: 5px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center; float:left;">今日甩卖</p>
 <p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">连住优惠</p>
 <p style="background-color: #edf4f8; width: 60px; margin-left: 10px; font-family: '微软雅黑'; color: #617888; font-size: 12px; text-align:center;float:left;">超赞房东</p>
 </div>
-<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="#"><?php echo $res['pro_name']?></a></strong></p></div>
+<div class="n3"><p><strong style="font-family: '微软雅黑'; font-size:20px;"><a href="chanpingxiangqing.php"><?php echo $res['pro_name']?></a></strong></p></div>
 <div class="n4"><p style="font-family:'微软雅黑'"><strong style="color: #6C0; margin-left:10px;"><?php echo $res['grade']?>分</strong>/&nbsp;66条点评·<?php echo $res['pro_introduction']?></p></div>
 <div class="n5">
 <p style="color:#ff6c4f; font-family:'微软雅黑'; margin-left:10px;">￥
@@ -182,13 +182,13 @@
 
 <div id="two" class="div-inline">
 &nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首&nbsp;页&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php" style="color:#FFF">首&nbsp;页</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;服&nbsp;务&nbsp;建&nbsp;议&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">服&nbsp;务&nbsp;建&nbsp;议</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;新&nbsp;闻&nbsp;资&nbsp;讯&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="gonglue.php" style="color:#FFF">新&nbsp;闻&nbsp;资&nbsp;讯&nbsp;</a>&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;意&nbsp;见&nbsp;反&nbsp;馈&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">意&nbsp;见&nbsp;反&nbsp;馈</a>&nbsp;&nbsp;&nbsp;
 </div><!--two-->
 
 <div id="three" class="div-inline">&nbsp;&nbsp;<br/>

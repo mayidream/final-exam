@@ -23,7 +23,7 @@ class Db
         $this->tableName=$tableName;
         $this->host = 'localhost';
         $this->user = 'root';
-        $this->pwd = 'wdy521521..';
+        $this->pwd = '';
         $this->charset = 'utf8';
         $this->dbname = 'riches';
         $this->link=$this->connection();
@@ -48,14 +48,6 @@ class Db
 //        }
         //返回结果
         return $link;
-    }
-    public function insert($sql){
-        $result=mysqli_query($this->link,$sql);
-        if ($result==true){
-        echo "'插入成功";
-        }else{
-            echo "插入成功";
-        }
     }
 
     //关闭数据库

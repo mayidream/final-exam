@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (!$_SESSION['username']){
+    header('location:sign_in.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +30,7 @@
     <li class="layui-nav-item layui-this"><a href="huiyuan.php">会员中心</a></li>
     <li class="layui-nav-item" style="margin-left: 20px ; margin-right: 20px"><a href="shop.php"><img src="images/购物车.png" width="20px" height="20px"></a></li>
 
-    <?php  session_start();
+    <?php  
     if (@$_SESSION['username'] &&@$_COOKIE['username']){
         echo "<li class='layui-nav-item'>
                 <a href=''><img src='./images/touxiang.jpeg' class='layui-nav-img'>".$_SESSION['username']."</a>
@@ -49,9 +55,9 @@
   <li class="layui-nav-item">
     <a href="javascript:;">订单</a>
     <dl class="layui-nav-child">
-      <dd><a href="">全部订单</a></dd>
-      <dd><a href="">客栈订单</a></dd>
-      <dd><a href="">U定制</a></dd>
+      <dd><a href="shop.php" style="color:#FFF">全部订单</a></dd>
+      <dd><a href="shop.php" style="color:#FFF">客栈订单</a></dd>
+      <dd><a href="Udingzhi.php" style="color:#FFF">U定制</a></dd>
       <dd><a href="">签证订单</a></dd>
       <dd><a href="">门票订单</a></dd>
     </dl>
@@ -90,12 +96,12 @@
     require_once 'autoload.php';
     $mysql=new Db('user');
     $link=$mysql->link;
-    $user_uname=$_SESSION['username'];
+    $user_uname=@$_SESSION['username'];
     $sql="select * from user where uname='$user_uname' ";
     $res=mysqli_query($link,$sql);
     $result=mysqli_fetch_assoc($res);
     ?>
-<a href="huiyuan_update.php?user_id=<?php echo $result['user_id'] ?>"><p style="font-size:16px;  font-family:微软雅黑; color:#FFF;">更改会员信息</p></a>
+<a href="grxx.php?user_id=<?php echo $result['user_id'] ?>"><p style="font-size:16px;  font-family:微软雅黑; color:#FFF;">更改会员信息</p></a>
 </div>
 <div id="yy">
 <a href="#"><p align="center"><img src="images/信封.png" width="60" height="60"/></p></a>
@@ -202,13 +208,13 @@
 
 <div id="two" class="div-inline">
 &nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首&nbsp;页&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php" style="color:#FFF">首&nbsp;页</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;服&nbsp;务&nbsp;建&nbsp;议&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">服&nbsp;务&nbsp;建&nbsp;议</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;新&nbsp;闻&nbsp;资&nbsp;讯&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="gonglue.php" style="color:#FFF">新&nbsp;闻&nbsp;资&nbsp;讯</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;意&nbsp;见&nbsp;反&nbsp;馈&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">意&nbsp;见&nbsp;反&nbsp;馈</a>&nbsp;&nbsp;&nbsp;
 </div><!--two-->
 
 <div id="three" class="div-inline">&nbsp;&nbsp;<br/>

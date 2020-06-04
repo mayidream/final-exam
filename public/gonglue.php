@@ -48,7 +48,7 @@
 <div class="test">
 <div class="layui-carousel" id="test1">
     <div carousel-item>
-        <div><img src="images/1.png"></div>
+        <div><a href="Udingzhi.php"><img src="images/1.png"></a></div>
         <div><img src="images/2.jpg"></div>
         <div><img src="images/3.jpg"></div>
         <div><img src="images/4.jpg"></div>
@@ -249,13 +249,13 @@
 
 <div id="two" class="div-inline">
 &nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首&nbsp;页&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php" style="color:#FFF">首&nbsp;页</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;服&nbsp;务&nbsp;建&nbsp;议&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">服&nbsp;务&nbsp;建&nbsp;议</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;新&nbsp;闻&nbsp;资&nbsp;讯&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="gonglue.php" style="color:#FFF">新&nbsp;闻&nbsp;资&nbsp;讯</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;意&nbsp;见&nbsp;反&nbsp;馈&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">意&nbsp;见&nbsp;反&nbsp;馈</a>&nbsp;&nbsp;&nbsp;
 </div><!--two-->
 
 <div id="three" class="div-inline">&nbsp;&nbsp;<br/>

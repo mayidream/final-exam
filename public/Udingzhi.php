@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>列表</title>
+    <title>U定制</title>
 <!--    导航栏css样式  勿动-->
     <link rel="stylesheet" href="./layui/css/layui.css">
     <script src="./layui/layui.js"></script>
@@ -255,10 +255,20 @@
   </div>
 	
 	<div style="margin:20px auto; width: 1000px; height: 180px;">
-		<a href="#"> <img src="images/tu1.jpg" style="width: 250px;"> </a>
-		<a href="#"> <div class="wenzi1"><p style="font-size: 20px;color: #4372A7; center;"><strong>火车+双飞 &nbsp;|&nbsp; 河南全景纯玩6日游	&nbsp;&nbsp;&nbsp;少林寺&nbsp;|&nbsp;龙门石窟&nbsp;|&nbsp;开封&nbsp;|&nbsp;云台山&nbsp;|&nbsp;24H管家接送.</strong></p></div></a>
-	  <a href="#"> <div style="position: relative; top:-120px; left: 260px; width: 300px;"><p style="font-size: 18px;">三门峡出发 &nbsp;|&nbsp;6天5晚<br>火车往返<br>五一&nbsp;|&nbsp;低价团期：2020-05-20&nbsp;出行</p></div></a>
-		<a href="#"><div style="position: relative;left: 820px;;top:-180px; width:160px;height: 40px; background-color: #6AE5E7;"> 
+		<a href="chanpingxiangqing.php"><img src="images/tu1.jpg" style="width: 250px;"> </a>
+		<a href="chanpingxiangqing.php"> <div class="wenzi1"><p style="font-size: 20px;color: #4372A7; center;"><strong>火车+双飞 &nbsp;|&nbsp; 河南全景纯玩6日游	&nbsp;&nbsp;&nbsp;少林寺&nbsp;|&nbsp;龙门石窟&nbsp;|&nbsp;开封&nbsp;|&nbsp;云台山&nbsp;|&nbsp;24H管家接送.</strong></p></div></a>
+	  <a href="chanpingxiangqing.php"> <div style="position: relative; top:-120px; left: 260px; width: 300px;"><p style="font-size: 18px;">三门峡出发 &nbsp;|&nbsp;6天5晚<br>火车往返<br>五一&nbsp;|&nbsp;低价团期：2020-05-20&nbsp;出行</p></div></a>
+		<a href="chanpingxiangqing.php"><div style="position: relative;left: 820px;;top:-180px; width:160px;height: 40px; background-color: #6AE5E7;"> 
+		  <p style="text-align: center; padding: 5px; color: #FFFFFF; font-size: 18px;letter-spacing: 10px;">新产品</p>
+		  <br>
+		  <p style="font-size: 20px; color: #ff5722;">￥<span style="font-size: 36px">1903</span>起&nbsp;/&nbsp;人</p>
+		  </div></a>
+		</div>
+	<hr style="color:#3D3D3D; height: 2px; width: 80%;">
+	
+	<div style="margin:20px auto; width: 1000px; height: 180px;"><a href="chanpingxiangqing.php"><img src="images/tu1.jpg" style="width: 250px;"></a></a><a href="chanpingxiangqing.php"> <div class="wenzi1"><p style="font-size: 20px;color: #4372A7; center;"><strong>火车+双飞 &nbsp;|&nbsp; 河南全景纯玩6日游	&nbsp;&nbsp;&nbsp;少林寺&nbsp;|&nbsp;龙门石窟&nbsp;|&nbsp;开封&nbsp;|&nbsp;云台山&nbsp;|&nbsp;24H管家接送.</strong></p></div></a>
+	  <a href="chanpingxiangqing.php"> <div style="position: relative; top:-120px; left: 260px; width: 300px;"><p style="font-size: 18px;">三门峡出发 &nbsp;|&nbsp;6天5晚<br>火车往返<br>五一&nbsp;|&nbsp;低价团期：2020-05-20&nbsp;出行</p></div></a>
+		<a href="chanpingxiangqing.php"><div style="position: relative;left: 820px;;top:-180px; width:160px;height: 40px; background-color: #6AE5E7;"> 
 		  <p style="text-align: center; padding: 5px; color: #FFFFFF; font-size: 18px;letter-spacing: 10px;">新产品</p>
 		  <br>
 		  <p style="font-size: 20px; color: #ff5722;">￥<span style="font-size: 36px">1903</span>起&nbsp;/&nbsp;人</p>
@@ -267,22 +277,10 @@
 	<hr style="color:#3D3D3D; height: 2px; width: 80%;">
 	
 	<div style="margin:20px auto; width: 1000px; height: 180px;">
-		<a href="#"> <img src="images/tu1.jpg" style="width: 250px;"> </a>
-		<a href="#"> <div class="wenzi1"><p style="font-size: 20px;color: #4372A7; center;"><strong>火车+双飞 &nbsp;|&nbsp; 河南全景纯玩6日游	&nbsp;&nbsp;&nbsp;少林寺&nbsp;|&nbsp;龙门石窟&nbsp;|&nbsp;开封&nbsp;|&nbsp;云台山&nbsp;|&nbsp;24H管家接送.</strong></p></div></a>
-	  <a href="#"> <div style="position: relative; top:-120px; left: 260px; width: 300px;"><p style="font-size: 18px;">三门峡出发 &nbsp;|&nbsp;6天5晚<br>火车往返<br>五一&nbsp;|&nbsp;低价团期：2020-05-20&nbsp;出行</p></div></a>
-		<a href="#"><div style="position: relative;left: 820px;;top:-180px; width:160px;height: 40px; background-color: #6AE5E7;"> 
-		  <p style="text-align: center; padding: 5px; color: #FFFFFF; font-size: 18px;letter-spacing: 10px;">新产品</p>
-		  <br>
-		  <p style="font-size: 20px; color: #ff5722;">￥<span style="font-size: 36px">1903</span>起&nbsp;/&nbsp;人</p>
-		  </div></a>
-		</div>
-	<hr style="color:#3D3D3D; height: 2px; width: 80%;">
-	
-	<div style="margin:20px auto; width: 1000px; height: 180px;">
-		<a href="#"> <img src="images/tu1.jpg" style="width: 250px;"> </a>
-		<a href="#"> <div class="wenzi1"><p style="font-size: 20px;color: #4372A7; center;"><strong>火车+双飞 &nbsp;|&nbsp; 河南全景纯玩6日游	&nbsp;&nbsp;&nbsp;少林寺&nbsp;|&nbsp;龙门石窟&nbsp;|&nbsp;开封&nbsp;|&nbsp;云台山&nbsp;|&nbsp;24H管家接送.</strong></p></div></a>
-	  <a href="#"> <div style="position: relative; top:-120px; left: 260px; width: 300px;"><p style="font-size: 18px;">三门峡出发 &nbsp;|&nbsp;6天5晚<br>火车往返<br>五一&nbsp;|&nbsp;低价团期：2020-05-20&nbsp;出行</p></div></a>
-		<a href="#"><div style="position: relative;left: 820px;;top:-180px; width:160px;height: 40px; background-color: #6AE5E7;"> 
+		<a href="chanpingxiangqing.php"> <img src="images/tu1.jpg" style="width: 250px;"> </a>
+		<a href="chanpingxiangqing.php"> <div class="wenzi1"><p style="font-size: 20px;color: #4372A7; center;"><strong>火车+双飞 &nbsp;|&nbsp; 河南全景纯玩6日游	&nbsp;&nbsp;&nbsp;少林寺&nbsp;|&nbsp;龙门石窟&nbsp;|&nbsp;开封&nbsp;|&nbsp;云台山&nbsp;|&nbsp;24H管家接送.</strong></p></div></a>
+	  <a href="chanpingxiangqing.php"> <div style="position: relative; top:-120px; left: 260px; width: 300px;"><p style="font-size: 18px;">三门峡出发 &nbsp;|&nbsp;6天5晚<br>火车往返<br>五一&nbsp;|&nbsp;低价团期：2020-05-20&nbsp;出行</p></div></a>
+		<a href="chanpingxiangqing.php"><div style="position: relative;left: 820px;;top:-180px; width:160px;height: 40px; background-color: #6AE5E7;"> 
 		  <p style="text-align: center; padding: 5px; color: #FFFFFF; font-size: 18px;letter-spacing: 10px;">新产品</p>
 		  <br>
 		  <p style="font-size: 20px; color: #ff5722;">￥<span style="font-size: 36px">1903</span>起&nbsp;/&nbsp;人</p>
@@ -325,13 +323,13 @@
 
 <div id="two" class="div-inline">
 &nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首&nbsp;页&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php" style="color:#FFF">首&nbsp;页</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;服&nbsp;务&nbsp;建&nbsp;议&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">服&nbsp;务&nbsp;建&nbsp;议</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;新&nbsp;闻&nbsp;资&nbsp;讯&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="gonglue.php" style="color:#FFF">新&nbsp;闻&nbsp;资&nbsp;讯</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;意&nbsp;见&nbsp;反&nbsp;馈&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">意&nbsp;见&nbsp;反&nbsp;馈</a>&nbsp;&nbsp;&nbsp;
 </div><!--two-->
 
 <div id="three" class="div-inline">&nbsp;&nbsp;<br/>

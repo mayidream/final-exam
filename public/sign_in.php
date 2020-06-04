@@ -65,7 +65,7 @@
 <input type="hidden" name="_token" value="<?php echo $_SESSION['_token'] ?>">
 <div style="width:300px"><!--验证码 -->
 <div class="yz"><input class="yzm" type="text" name="verify" placeholder="验证码"/></div>
-<div class="y"> <img src="useVcode.php" onclick="this.src='useVcode.php?'+Math.random()" style="float: right"></div>
+<div class="y"> <img src="useVcode.php" onClick="this.src='useVcode.php?'+Math.random()" style="float: right"></div>
 </div><!--验证码 -->
 
 <div class="forgetPwd"><a class="forgetLink" href="#" target="" style="color: red">忘记密码?</a></div>
@@ -104,13 +104,13 @@
 
 <div id="two" class="div-inline">
 &nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首&nbsp;页&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php" style="color:#FFF">首&nbsp;页</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;服&nbsp;务&nbsp;建&nbsp;议&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">服&nbsp;务&nbsp;建&nbsp;议</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;新&nbsp;闻&nbsp;资&nbsp;讯&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="gonglue.php" style="color:#FFF">新&nbsp;闻&nbsp;资&nbsp;讯</a>&nbsp;&nbsp;&nbsp;
 |
-&nbsp;&nbsp;&nbsp;意&nbsp;见&nbsp;反&nbsp;馈&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;<a href="#" style="color:#FFF">意&nbsp;见&nbsp;反&nbsp;馈</a>&nbsp;&nbsp;&nbsp;
 </div><!--two-->
 
 <div id="three" class="div-inline">&nbsp;&nbsp;<br/>

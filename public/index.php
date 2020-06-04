@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>悠游网</title>
+    <title>首页</title>
 <!--    导航栏css样式  勿动-->
     <link rel="stylesheet" href="./layui/css/layui.css">
     <script src="./layui/layui.js"></script>
@@ -58,7 +58,7 @@
 <div class="haibao">
 <div class="layui-carousel" id="test1">
     <div carousel-item>
-        <div><a href="#"><img src="images/1.png"></a> </div>
+        <div><a href="Udingzhi.php"><img src="images/1.png"></a> </div>
         <div><a href="#"><img src="images/2.jpg"></a> </div>
         <div><a href="#"><img src="images/3.jpg"></a> </div>
         <div><a href="#"><img src="images/4.jpg"></a> </div>
@@ -135,31 +135,31 @@
 		<div id="an2"  align="left"><a href="chanpingxiangqing.php?pro_id=<?php echo $results['tehui_id']?>" ><input class="button" type="button" value="立即预定"/></a></div>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
-	<div id="ys2"><div><img src="<?php echo $results['pro_path']?>"></div>
+	<div id="ys2"><a href="chanpingxiangqing.php"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div></a>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
-	<div id="ys3"><div><img src="<?php echo $results['pro_path']?>"></div>
+	<div id="ys3"><a href="chanpingxiangqing.php"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div></a>
 	  </div>
 	</div>
 	<div id="yx">
         <?php $results=mysqli_fetch_assoc($result); ?>
-	<div id="yx1"><div><img src="<?php echo $results['pro_path']?>"></div>
+	<div id="yx1"><a href="chanpingxiangqing.php"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><a href="#"><input class="button"  type="button"  value="立即预定"/></a></div>
+		<div id="an2" align="left"><a href="#"><input class="button"  type="button"  value="立即预定"/></a></div></a>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
-	<div id="yx2"><div><img src="<?php echo $results['pro_path']?>"></div>
+	<div id="yx2"><a href="chanpingxiangqing.php"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button"  value="立即预定"/></a></div></a>
 	  </div>
         <?php $results=mysqli_fetch_assoc($result); ?>
-	<div id="yx3"><div><img src="<?php echo $results['pro_path']?>"></div>
+	<div id="yx3"><a href="chanpingxiangqing.php"><div><img src="<?php echo $results['pro_path']?>"></div>
 		<p align="center" class="xg"><?php echo $results['pro_name']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div id="an2" align="left"><a href="#"><input class="button" type="button" value="立即预定"/></a></div>
+		<div id="an2" align="left"><a href="#"><input class="button" type="button" value="立即预定"/></a></div></a>
 	  </div>
 	</div>
 </div>
@@ -200,25 +200,25 @@
     $result=mysqli_query($link,$sql);
     $results=mysqli_fetch_assoc($result);
     ?>
-<div id="s2">
+<div id="s2"><a href="chanpingxiangqing.php">
 	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
 	<a href="#"><p align="left" class="q">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i">起</p></a>
-	<p align="right" class="myd">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
+	<p align="right" class="myd">满意度&nbsp;<?php echo $results['satisfied']?>%</p></a>
   </div>
-<div id="s3">
+<div id="s3"><a href="chanpingxiangqing.php">
     <?php $results=mysqli_fetch_assoc($result); ?>
 	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
 	<a href="#"><p align="left" class="q1">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i1">起</p></a>
-	<p align="right" class="myd1">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
+	<p align="right" class="myd1">满意度&nbsp;<?php echo $results['satisfied']?>%</p></a>
   </div>
-<div id="s4">
+<div id="s4"><a href="chanpingxiangqing.php">
     <?php $results=mysqli_fetch_assoc($result); ?>
 	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
 	<a href="#"><p align="left" class="q2">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i2">起</p></a>
-	<p align="right" class="myd2">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
+	<p align="right" class="myd2">满意度&nbsp;<?php echo $results['satisfied']?>%</p></a>
   </div>
 
 <div id="wu">
@@ -239,26 +239,26 @@
 	</div>
   </div>
     
-<div id="w2">
+<div id="w2"><a href="chanpingxiangqing.php">
     <?php $results=mysqli_fetch_assoc($result); ?>
 	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
 	<a href="#"><p align="left" class="q">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i">起</p></a>
-	<p align="right" class="myd">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
+	<p align="right" class="myd">满意度&nbsp;<?php echo $results['satisfied']?>%</p></a>
   </div>
-<div id="w3">
+<div id="w3"><a href="chanpingxiangqing.php">
     <?php $results=mysqli_fetch_assoc($result); ?>
 	<div align="center"><img src="<?php echo $results['pro_path']?>"></div>
 	<a href="#"><p align="left" class="q1">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i1">起</p></a>
-	<p align="right" class="myd1">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
+	<p align="right" class="myd1">满意度&nbsp;<?php echo $results['satisfied']?>%</p></a>
   </div>
-<div id="w4">
+<div id="w4"><a href="chanpingxiangqing.php">
     <?php $results=mysqli_fetch_assoc($result); ?>
 	<div align="left"><img src="<?php echo $results['pro_path']?>"></div>
 	<a href="#"><p align="left" class="q2">￥<?php echo $results['price']?></p></a>
 	<a href="#"><p align="left" class="i2">起</p></a>
-	<p align="right" class="myd2">满意度&nbsp;<?php echo $results['satisfied']?>%</p>
+	<p align="right" class="myd2">满意度&nbsp;<?php echo $results['satisfied']?>%</p></a>
   </div>  
 </div>
 
@@ -345,13 +345,13 @@
 
         <div id="two" class="div-inline">
             &nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>&nbsp;&nbsp;<br/>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首&nbsp;页&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php" style="color:#FFF">首&nbsp;页</a>&nbsp;&nbsp;&nbsp;
             |
-            &nbsp;&nbsp;&nbsp;服&nbsp;务&nbsp;建&nbsp;议&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<a href="" style="color:#FFF">服&nbsp;务&nbsp;建&nbsp;议</a>&nbsp;&nbsp;&nbsp;
             |
-            &nbsp;&nbsp;&nbsp;新&nbsp;闻&nbsp;资&nbsp;讯&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<a href="gonglue.php" style="color:#FFF">新&nbsp;闻&nbsp;资&nbsp;讯</a>&nbsp;&nbsp;&nbsp;
             |
-            &nbsp;&nbsp;&nbsp;意&nbsp;见&nbsp;反&nbsp;馈&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;<a href="" style="color:#FFF">意&nbsp;见&nbsp;反&nbsp;馈</a>&nbsp;&nbsp;&nbsp;
         </div><!--two-->
 
         <div id="three" class="div-inline">&nbsp;&nbsp;<br/>
